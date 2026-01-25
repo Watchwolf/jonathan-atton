@@ -1,0 +1,118 @@
+{
+    "nav": {
+        "about": "À propos",
+        "skills": "Compétences",
+        "experience": "Expériences",
+        "portfolio": "Portfolio",
+        "sports": "Sports"
+    },
+    "hero": {
+        "title": "Jonathan Atton",
+        "subtitle": "Développeur Fullstack",
+        "location": "Secteur Alsace - Moselle - France",
+        "text": "Président Cani'Compet Alsace | Sportif canicross & triathlon",
+        "contact": "Me contacter",
+        "cv_title": "Télécharger mon CV"
+    },
+    "about": {
+        "title": "À propos",
+        "p1": "En tant que développeur logiciel sénior, je suis prêt à apporter une valeur ajoutée immédiate à votre entreprise. Mon expérience multisectorielle (banque, juridique, RGPD, laboratoire d’analyses, sport) me permet de comprendre et de m’adapter rapidement à des contextes variés. Mon expertise technique assure la création de solutions logiciels capables de répondre aux défis les plus complexes.",
+        "p2": "Au-delà du code, je mets à profit mes compétences complémentaires en matière de stratégie décisionnelle, de marketing et d’encadrement de projets & équipes pour assurer une gestion intégrée du cycle de vie produit."
+    },
+    "skills": {
+        "title": "Compétences",
+        "backend": {
+            "title": "Back-end",
+            "item1": "<strong>Python / Django</strong>: Maîtrise avancée, APIs RESTful.",
+            "item2": "<strong>.NET / C#</strong>: Écosystème Microsoft, WPF, Analyse d'images, IA.",
+            "item3": "<strong>WebSocket</strong>: Communication temps réel."
+        },
+        "frontend": {
+            "title": "Front-end",
+            "item1": "<strong>Angular / Ionic</strong>: Applications web et mobiles modernes.",
+            "item2": "<strong>Microsoft Dynamics</strong>: Et PowerApps.",
+            "item3": "<strong>React</strong>: Avec intégration dans Microsoft Dynamics.",
+            "item4": "<strong>Python / PyQt</strong>: Interfaces de bureau."
+        },
+        "data": {
+            "title": "Data & Cloud",
+            "item1": "<strong>SQL</strong>: Bases de données relationnelles, optimisation.",
+            "item2": "<strong>Cloud (OVH)</strong>: Déploiement, gestion d'infrastructure.",
+            "item3": "<strong>OS</strong>: Linux, MacOS, Windows."
+        },
+        "ia": {
+            "title": "R&D / IA",
+            "item1": "<strong>OpenCV / Emgu</strong>: Vision par ordinateur.",
+            "item2": "<strong>IA</strong>: Analyse automatique.",
+            "item3": "<strong>Intégration de l'IA</strong>: Dans les applications."
+        }
+    },
+    "experience": {
+        "title": "Expériences",
+        "exp1": {
+            "date": "10/2025 – Aujourd’hui",
+            "title": "Développeur sénior – TVH Consulting",
+            "desc": "Intégrateur et développeur spécialisé sur la solution <strong>Microsoft Dynamics</strong>. Conception et déploiement d'applications métiers avancées exploitant la puissance de <strong>Canvas Apps</strong> et la flexibilité de <strong>React</strong> pour répondre aux besoins critiques de gestion d'entreprise."
+        },
+        "exp2": {
+            "date": "12/2016 – Aujourd’hui",
+            "title": "Création de la plateforme RacesConnect",
+            "desc": "Création et promotion des plateformes mobiles <a href=\"https://racesconnect.com\" target=\"_blank\">RacesConnect</a> et <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Gestion des inscriptions et chronométrage."
+        },
+        "exp3": {
+            "date": "06/2020 – 02/2025",
+            "title": "Création de la plateforme CaniGPS",
+            "desc": "Solution de suivi GPS pour chiens <a href=\"https://canigps.fr\" target=\"_blank\">CaniGPS</a>. Localisation, clôtures virtuelles, suivi d'activité sportif."
+        },
+        "exp4": {
+            "date": "04/2018 – 12/2022",
+            "title": "Développeur sénior Eurofins",
+            "desc": "R&D sur l'analyse automatique par microscope électronique. Automatisation, IA, ergonomie."
+        },
+        "exp5": {
+            "date": "01/2013 – 03/2018",
+            "title": "Responsable Informatique ActeCil",
+            "desc": "Mise en place infrastructure, outils SAS (APM, CilApps), management équipe."
+        },
+        "exp6": {
+            "date": "01/2010 – 01/2013",
+            "title": "Développeur Euro Information",
+            "desc": "Outils WEB, statistiques, CMS multi-sites pour Crédit Mutuel CIC."
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "project1": {
+            "title": "Son espace santé / refuge / éleveur",
+            "desc": "Solution complète de gestion du bien-être et du suivi administratif pour les propriétaires d'animaux, les refuges et les éleveurs.",
+            "link": "Voir le site"
+        },
+        "project2": {
+            "title": "RacesConnect – Canicompet",
+            "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions.",
+            "link": "Voir le site"
+        },
+        "project3": {
+            "title": "RacesConnect Timing",
+            "desc": "Logiciel pour gérer les listes de départ et le chronométrage des compétitions. Chronométrage manuel ou automatique avec des puces.",
+            "link": "Voir le site"
+        },
+        "project4": {
+            "title": "CaniClub Connect",
+            "desc": "Application mobile pour clubs canins : gestion membres, comm, boutique."
+        },
+        "project5": {
+            "title": "CaniGPS",
+            "desc": "Plateforme de géolocalisation et suivi d'activité pour chiens.",
+            "link": "Voir le site"
+        }
+    },
+    "sports": {
+        "title": "Sports",
+        "p1": "Athlète accompli et passionné, je pratique régulièrement le canicross, le caniVTT, le triathlon et le Xterra. J’ai participé à plusieurs championnats de France, d’Europe et du Monde.",
+        "p2": "Cette discipline m'apporte résilience et capacité à atteindre des objectifs ambitieux. Je suis également président du club <strong>Cani’Compet Alsace</strong> et organisateur du <a href=\"https://canicrossdebenfeld.canicompet.com/\" target=\"_blank\">canicross de Benfeld</a>."
+    },
+    "footer": {
+        "rights": "© 2026 Jonathan Atton. Tous droits réservés."
+    }
+}

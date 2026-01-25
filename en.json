@@ -1,0 +1,118 @@
+{
+    "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "sports": "Sports"
+    },
+    "hero": {
+        "title": "Jonathan Atton",
+        "subtitle": "Fullstack Developer",
+        "location": "Alsace - Moselle Sector - France",
+        "text": "President of Cani'Compet Alsace | Canicross & Triathlon athlete",
+        "contact": "Contact me",
+        "cv_title": "Download my CV"
+    },
+    "about": {
+        "title": "About",
+        "p1": "As a senior software developer, I am ready to bring immediate added value to your company. My multi-sector experience (banking, legal, GDPR, analysis laboratory, sports) allows me to understand and quickly adapt to various contexts. My technical expertise ensures the creation of software solutions capable of meeting the most complex challenges.",
+        "p2": "Beyond code, I leverage my complementary skills in decision-making strategy, marketing, and project & team management to ensure integrated product lifecycle management."
+    },
+    "skills": {
+        "title": "Skills",
+        "backend": {
+            "title": "Back-end",
+            "item1": "<strong>Python / Django</strong>: Advanced mastery, RESTful APIs.",
+            "item2": "<strong>.NET / C#</strong>: Microsoft ecosystem, WPF, Image analysis, AI.",
+            "item3": "<strong>WebSocket</strong>: Real-time communication."
+        },
+        "frontend": {
+            "title": "Front-end",
+            "item1": "<strong>Angular / Ionic</strong>: Modern web and mobile applications.",
+            "item2": "<strong>Microsoft Dynamics</strong>: and PowerApps.",
+            "item3": "<strong>React</strong>: Integrated within Microsoft Dynamics.",
+            "item4": "<strong>Python / PyQt</strong>: Desktop interfaces."
+        },
+        "data": {
+            "title": "Data & Cloud",
+            "item1": "<strong>SQL</strong>: Relational databases, optimization.",
+            "item2": "<strong>Cloud (OVH)</strong>: Deployment, infrastructure management.",
+            "item3": "<strong>OS</strong>: Linux, MacOS, Windows."
+        },
+        "ia": {
+            "title": "R&D / AI",
+            "item1": "<strong>OpenCV / Emgu</strong>: Computer vision.",
+            "item2": "<strong>AI</strong>: Automatic analysis.",
+            "item3": "<strong>AI Integration</strong>: Into applications."
+        }
+    },
+    "experience": {
+        "title": "Experience",
+        "exp1": {
+            "date": "10/2025 – Present",
+            "title": "Senior Developer – TVH Consulting",
+            "desc": "Integrator and developer specialized in <strong>Microsoft Dynamics</strong> solutions. Design and deployment of advanced business applications leveraging <strong>Canvas Apps</strong> and the flexibility of <strong>React</strong> to meet critical business management needs."
+        },
+        "exp2": {
+            "date": "12/2016 – Present",
+            "title": "Creation of RacesConnect Platform",
+            "desc": "Creation and promotion of mobile platforms <a href=\"https://racesconnect.com\" target=\"_blank\">RacesConnect</a> and <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Registration management and timing."
+        },
+        "exp3": {
+            "date": "06/2020 – 02/2025",
+            "title": "Creation of CaniGPS Platform",
+            "desc": "GPS tracking solution for dogs <a href=\"https://canigps.fr\" target=\"_blank\">CaniGPS</a>. Localization, virtual fences, sports activity tracking."
+        },
+        "exp4": {
+            "date": "04/2018 – 12/2022",
+            "title": "Senior Developer Eurofins",
+            "desc": "R&D on automatic analysis by electron microscope. Automation, AI, ergonomics."
+        },
+        "exp5": {
+            "date": "01/2013 – 03/2018",
+            "title": "IT Manager ActeCil",
+            "desc": "Infrastructure setup, SaaS tools (APM, CilApps), team management."
+        },
+        "exp6": {
+            "date": "01/2010 – 01/2013",
+            "title": "Developer Euro Information",
+            "desc": "Web tools, statistics, multi-site CMS for Crédit Mutuel CIC."
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "project1": {
+            "title": "Son Espace Santé / Refuge / Éleveur",
+            "desc": "Complete health and administrative tracking solution for pet owners, shelters, and breeders.",
+            "link": "Visit site"
+        },
+        "project2": {
+            "title": "RacesConnect – Canicompet",
+            "desc": "Registration management and timing platforms for competitions.",
+            "link": "Visit site"
+        },
+        "project3": {
+            "title": "RacesConnect Timing",
+            "desc": "Software to manage start lists and competition timing. Manual or automatic timing with chips.",
+            "link": "Visit site"
+        },
+        "project4": {
+            "title": "CaniClub Connect",
+            "desc": "Mobile application for dog clubs: member management, communication, shop."
+        },
+        "project5": {
+            "title": "CaniGPS",
+            "desc": "Geolocation and activity tracking platform for dogs.",
+            "link": "Visit site"
+        }
+    },
+    "sports": {
+        "title": "Sports",
+        "p1": "An accomplished and passionate athlete, I regularly practice canicross, bikejorning, triathlon, and Xterra. I have participated in several French, European, and World championships.",
+        "p2": "This discipline brings me resilience and the ability to achieve ambitious goals. I am also president of the <strong>Cani’Compet Alsace</strong> club and organizer of the <a href=\"https://canicrossdebenfeld.canicompet.com/\" target=\"_blank\">Benfeld Canicross</a>."
+    },
+    "footer": {
+        "rights": "© 2026 Jonathan Atton. All rights reserved."
+    }
+}

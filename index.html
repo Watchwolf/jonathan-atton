@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Jonathan Atton - Développeur Fullstack, Président Cani'Compet Alsace, Sportif.">
+    <title>Jonathan Atton - Développeur Fullstack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">JA</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="#sports" class="nav-link" data-i18n="nav.sports">Sports</a></li>
+                    <li class="lang-switcher">
+                        <button id="lang-btn" class="lang-btn">EN</button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-img-container fade-in">
+                    <img src="images/cropped-cropped-631FE723-D99F-48FF-8BBA-A090138408D4_1_105_c.jpeg"
+                        alt="Jonathan Atton" class="hero-img">
+                </div>
+                <h1 class="hero-title fade-in" data-i18n="hero.title">Jonathan Atton</h1>
+                <h2 class="hero-subtitle fade-in" data-i18n="hero.subtitle">Développeur Fullstack</h2>
+                <p class="hero-location fade-in"><i class="fa-solid fa-location-dot"></i> <span
+                        data-i18n="hero.location">Secteur Alsace - Moselle -
+                        France</span></p>
+                <p class="hero-text fade-in" data-i18n="hero.text">Président Cani'Compet Alsace | Sportif canicross &
+                    triathlon</p>
+
+                <div class="hero-socials fade-in">
+                    <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" title="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Watchwolf" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
+                        title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+
+                <div class="hero-actions fade-in">
+                    <a href="mailto:jonathan.atton@gmail.com" class="btn btn-primary" data-i18n="hero.contact">Me
+                        contacter</a>
+                    <a href="tel:+33620017101" class="btn btn-secondary">+33 620017101</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="about.title">À propos</h2>
+                <div class="about-content fade-in">
+                    <p data-i18n="about.p1">
+                        En tant que développeur logiciel sénior, je suis prêt à apporter une valeur ajoutée immédiate à
+                        votre entreprise.
+                        Mon expérience multisectorielle (banque, juridique, RGPD, laboratoire d’analyses, sport) me
+                        permet de comprendre et de m’adapter rapidement à des contextes variés.
+                        Mon expertise technique assure la création de solutions logiciels capables de répondre aux défis
+                        les plus complexes.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Au-delà du code, je mets à profit mes compétences complémentaires en matière de stratégie
+                        décisionnelle, de marketing et d’encadrement de projets & équipes pour assurer une gestion
+                        intégrée du cycle de vie produit.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#Développeur</span>
+                        <span class="tag">#Python</span>
+                        <span class="tag">#Django</span>
+                        <span class="tag">#Angular</span>
+                        <span class="tag">#Ionic</span>
+                        <span class="tag">#C#</span>
+                        <span class="tag">#Saas</span>
+                        <span class="tag">#WebApps</span>
+                        <span class="tag">#Sport</span>
+                        <span class="tag">#Triathlon</span>
+                        <span class="tag">#Canicross</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack-section alt-bg">
+            <div class="container">
+                <div class="tech-logos-wrapper fade-in">
+                    <div class="tech-logos">
+                        <img src="images/python.png" alt="Python" title="Python">
+                        <img src="images/python-django-1024x341.png" alt="Django" title="Django">
+                        <img src="images/angular.png" alt="Angular" title="Angular">
+                        <img src="images/react.png" alt="React" title="React">
+                        <img src="images/ionic.png" alt="Ionic" title="Ionic">
+                        <img src="images/csharp.png" alt="C#" title="C#">
+                        <img src="images/dynamics.png" alt="Microsoft Dynamics 365" title="Microsoft Dynamics 365">
+                        <img src="images/powerapps.png" alt="PowerApps" title="PowerApps">
+                        <img src="images/Microsoft_SQL_server_logo.png" alt="SQL Server" title="SQL Server">
+                        <!-- Duplicate for infinite scroll -->
+                        <img src="images/python.png" alt="Python">
+                        <img src="images/python-django-1024x341.png" alt="Django">
+                        <img src="images/angular.png" alt="Angular">
+                        <img src="images/react.png" alt="React">
+                        <img src="images/ionic.png" alt="Ionic">
+                        <img src="images/csharp.png" alt="C#">
+                        <img src="images/dynamics.png" alt="Microsoft Dynamics 365">
+                        <img src="images/powerapps.png" alt="PowerApps">
+                        <img src="images/Microsoft_SQL_server_logo.png" alt="SQL Server">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="skills.title">Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.backend.title">Back-end</h3>
+                        <ul>
+                            <li data-i18n="skills.backend.item1"><strong>Python / Django</strong>: Maîtrise avancée,
+                                APIs RESTful.</li>
+                            <li data-i18n="skills.backend.item2"><strong>.NET / C#</strong>: Écosystème Microsoft, WPF,
+                                Analyse d'images, IA.</li>
+                            <li data-i18n="skills.backend.item3"><strong>WebSocket</strong>: Communication temps réel.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.frontend.title">Front-end</h3>
+                        <ul>
+                            <li data-i18n="skills.frontend.item1"><strong>Angular / Ionic</strong>: Applications web et
+                                mobiles modernes.</li>
+                            <li data-i18n="skills.frontend.item2"><strong>Microsoft Dynamics</strong>: Et PowerApps.
+                            </li>
+                            <li data-i18n="skills.frontend.item3"><strong>React</strong>: Avec intégration dans
+                                Microsoft Dynamics.</li>
+                            <li data-i18n="skills.frontend.item4"><strong>Python / PyQt</strong>: Interfaces de bureau.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.data.title">Data & Cloud</h3>
+                        <ul>
+                            <li data-i18n="skills.data.item1"><strong>SQL</strong>: Bases de données relationnelles,
+                                optimisation.</li>
+                            <li data-i18n="skills.data.item2"><strong>Cloud (OVH)</strong>: Déploiement, gestion
+                                d'infrastructure.</li>
+                            <li data-i18n="skills.data.item3"><strong>OS</strong>: Linux, MacOS, Windows.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.ia.title">R&D / IA</h3>
+                        <ul>
+                            <li data-i18n="skills.ia.item1"><strong>OpenCV / Emgu</strong>: Vision par ordinateur.</li>
+                            <li data-i18n="skills.ia.item2"><strong>IA</strong>: Analyse automatique.</li>
+                            <li data-i18n="skills.ia.item3"><strong>Intégration de l'IA</strong>: Dans les applications.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="experience.title">Expériences</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp1.date">10/2025 – Aujourd’hui</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp1.title">Développeur sénior – TVH Consulting</h3>
+                            <p data-i18n="experience.exp1.desc">Intégrateur et développeur spécialisé sur la solution
+                                <strong>Microsoft
+                                    Dynamics</strong>. Conception
+                                et déploiement d'applications métiers avancées exploitant la puissance de <strong>Canvas
+                                    Apps</strong> et la flexibilité de <strong>React</strong> pour répondre aux besoins
+                                critiques de gestion
+                                d'entreprise.
+                            </p>
+                            <p class="tech-stack">Microsoft Dynamics, Canvas Apps, React</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp2.date">12/2016 – Aujourd’hui</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp2.title">Création de la plateforme RacesConnect</h3>
+                            <p data-i18n="experience.exp2.desc">Création et promotion des plateformes mobiles <a
+                                    href="https://racesconnect.com" target="_blank">RacesConnect</a> et <a
+                                    href="https://canicompet.com" target="_blank">Canicompet</a>. Gestion des
+                                inscriptions et chronométrage.</p>
+                            <p class="tech-stack">Python/Django, Angular/Ionic, Python/QT</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp3.date">06/2020 – 02/2025</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp3.title">Création de la plateforme CaniGPS</h3>
+                            <p data-i18n="experience.exp3.desc">Solution de suivi GPS pour chiens <a
+                                    href="https://canigps.fr" target="_blank">CaniGPS</a>. Localisation, clôtures
+                                virtuelles, suivi d'activité
+                                sportif.</p>
+                            <p class="tech-stack">Python/Django, Angular/Ionic, Hardware (GPS)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp4.date">04/2018 – 12/2022</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp4.title">Développeur sénior Eurofins</h3>
+                            <p data-i18n="experience.exp4.desc">R&D sur l'analyse automatique par microscope
+                                électronique. Automatisation, IA, ergonomie.
+                            </p>
+                            <p class="tech-stack">.Net, C#, Visual Studio, OpenCV</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp5.date">01/2013 – 03/2018</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp5.title">Responsable Informatique ActeCil</h3>
+                            <p data-i18n="experience.exp5.desc">Mise en place infrastructure, outils SAS (APM, CilApps),
+                                management équipe.</p>
+                            <p class="tech-stack">Python, Django, Infrastructure</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date" data-i18n="experience.exp6.date">01/2010 – 01/2013</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="experience.exp6.title">Développeur Euro Information</h3>
+                            <p data-i18n="experience.exp6.desc">Outils WEB, statistiques, CMS multi-sites pour Crédit
+                                Mutuel CIC.</p>
+                            <p class="tech-stack">.Net, C#, ASP.NET</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="portfolio.title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card fade-in">
+                        <img src="images/son-espace-sante.png" alt="Espace Santé" class="project-img">
+                        <h3 data-i18n="portfolio.project1.title">Son espace santé / refuge / éleveur</h3>
+                        <p data-i18n="portfolio.project1.desc">Solution complète de gestion du bien-être et du suivi
+                            administratif pour les propriétaires
+                            d'animaux, les refuges et les éleveurs.</p>
+                        <a href="https://sonespacesante.fr" target="_blank" class="project-link"
+                            data-i18n="portfolio.project1.link">Voir le site</a>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="images/racesconnect-1-1024x1024.png" alt="RacesConnect" class="project-img">
+                        <h3 data-i18n="portfolio.project2.title">RacesConnect – Canicompet</h3>
+                        <p data-i18n="portfolio.project2.desc">Plateformes de gestion d'inscriptions et chronométrage de
+                            compétitions.</p>
+                        <a href="https://racesconnect.com" target="_blank" class="project-link"
+                            data-i18n="portfolio.project2.link">Voir le site</a>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="images/banner-1024x269.png" alt="RacesConnect Timing" class="project-img">
+                        <h3 data-i18n="portfolio.project3.title">RacesConnect Timing</h3>
+                        <p data-i18n="portfolio.project3.desc">Logiciel pour gérer les listes de départ et le
+                            chronométrage des compétitions. Chronométrage
+                            manuel ou automatique avec des puces.</p>
+                        <a href="https://racesconnect.com/racesconnect" target="_blank" class="project-link"
+                            data-i18n="portfolio.project3.link">Voir le
+                            site</a>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="images/caniclub-connect.jpg" alt="CaniClub Connect" class="project-img">
+                        <h3 data-i18n="portfolio.project4.title">CaniClub Connect</h3>
+                        <p data-i18n="portfolio.project4.desc">Application mobile pour clubs canins : gestion membres,
+                            comm, boutique.</p>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="images/canigps_apps-1024x299.png" alt="CaniGPS" class="project-img">
+                        <h3 data-i18n="portfolio.project5.title">CaniGPS</h3>
+                        <p data-i18n="portfolio.project5.desc">Plateforme de géolocalisation et suivi d'activité pour
+                            chiens.</p>
+                        <a href="https://canigps.fr" target="_blank" class="project-link"
+                            data-i18n="portfolio.project5.link">Voir le site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Section -->
+        <section id="sports" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sports.title">Sports</h2>
+                <div class="sports-content fade-in">
+                    <p data-i18n="sports.p1">
+                        Athlète accompli et passionné, je pratique régulièrement le canicross, le caniVTT, le triathlon
+                        et le Xterra.
+                        J’ai participé à plusieurs championnats de France, d’Europe et du Monde.
+                    </p>
+                    <p data-i18n="sports.p2">
+                        Cette discipline m'apporte résilience et capacité à atteindre des objectifs ambitieux.
+                        Je suis également président du club <strong>Cani’Compet Alsace</strong> et organisateur du <a
+                            href="https://canicrossdebenfeld.canicompet.com/" target="_blank">canicross de Benfeld</a>.
+                    </p>
+                </div>
+                <div class="sports-gallery fade-in">
+                    <img src="images/FCAB2D79-2C3F-43FF-BF05-7690E92FD2E2_1_105_c-1024x683.jpeg" alt="Sport 1"
+                        class="sports-img">
+                    <img src="images/E3CB5563-38F4-49E4-92AA-5CBF122BCEBA_1_105_c-1024x683.jpeg" alt="Sport 2"
+                        class="sports-img">
+                    <img src="images/DFAD2798-CE25-41A5-9EF6-79DEAA083C6F_1_105_c-1-1024x684.jpeg" alt="Sport 3"
+                        class="sports-img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Watchwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
+                    title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+            <p data-i18n="footer.rights">&copy; 2026 Jonathan Atton. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
