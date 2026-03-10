@@ -718,7 +718,7 @@ body:not(.light-mode) .theme-toggle .fa-sun {
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         flex-shrink: 0;
     }
 
@@ -743,26 +743,72 @@ body:not(.light-mode) .theme-toggle .fa-sun {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: 15px;
+        gap: 12px;
         padding: 10px 0;
         min-width: max-content;
     }
 
     .nav-link {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         white-space: nowrap;
     }
 
-    .mobile-menu-btn {
-        display: none;
+    .lang-btn {
+        padding: 3px 6px;
+        font-size: 0.7rem;
+        min-width: 30px;
+    }
+
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+        border-radius: 8px;
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .hero-subtitle {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+        padding: 20px 20px 10px;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+        padding: 0 20px 20px;
+    }
+
+    .page-nav-btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        gap: 8px;
     }
 
     .timeline::before {
@@ -770,11 +816,10 @@ body:not(.light-mode) .theme-toggle .fa-sun {
     }
 
     .timeline-item {
-        padding-left: 40px;
+        padding-left: 30px;
     }
 
     .timeline-item::before {
         left: -10px;
     }
-
 }
