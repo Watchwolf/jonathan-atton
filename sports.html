@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Activités sportives de Jonathan Atton.">
+    <title>Jonathan Atton - Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">JA</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
+                    <li class="lang-switcher">
+                        <button id="lang-btn" class="lang-btn">EN</button>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sports Section -->
+        <section id="sports" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sports.title">Sports</h2>
+                <div class="sports-content fade-in">
+                    <p data-i18n="sports.p1">
+                        Athlète accompli et passionné, je pratique régulièrement le canicross, le caniVTT, le triathlon
+                        et le Xterra.
+                        J’ai participé à plusieurs championnats de France, d’Europe et du Monde.
+                    </p>
+                    <p data-i18n="sports.p2">
+                        Cette discipline m'apporte résilience et capacité à atteindre des objectifs ambitieux.
+                        Je suis également président du club <strong>Cani’Compet Alsace</strong> et organisateur du <a
+                            href="https://canicrossdebenfeld.canicompet.com/" target="_blank">canicross de Benfeld</a>.
+                    </p>
+                </div>
+                <div class="sports-gallery fade-in">
+                    <img src="images/FCAB2D79-2C3F-43FF-BF05-7690E92FD2E2_1_105_c-1024x683.jpeg" alt="Sport 1"
+                        class="sports-img">
+                    <img src="images/E3CB5563-38F4-49E4-92AA-5CBF122BCEBA_1_105_c-1024x683.jpeg" alt="Sport 2"
+                        class="sports-img">
+                    <img src="images/DFAD2798-CE25-41A5-9EF6-79DEAA083C6F_1_105_c-1-1024x684.jpeg" alt="Sport 3"
+                        class="sports-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Navigation -->
+        <div class="container">
+            <nav class="page-nav">
+                <a href="portfolio.html" class="page-nav-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span data-i18n="nav.nav_prev">Précédent</span> : <span data-i18n="nav.portfolio">Portfolio</span>
+                </a>
+                <a href="index.html" class="page-nav-btn next">
+                    <span data-i18n="nav.nav_next">Suivant</span> : <span data-i18n="nav.about">À propos</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Watchwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
+                    title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+            <p data-i18n="footer.rights">&copy; 2026 Jonathan Atton. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

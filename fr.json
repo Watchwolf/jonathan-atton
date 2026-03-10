@@ -4,7 +4,9 @@
         "skills": "Compétences",
         "experience": "Expériences",
         "portfolio": "Portfolio",
-        "sports": "Sports"
+        "sports": "Sports",
+        "nav_prev": "Précédent",
+        "nav_next": "Suivant"
     },
     "hero": {
         "title": "Jonathan Atton",
@@ -45,6 +47,18 @@
             "item1": "<strong>OpenCV / Emgu</strong>: Vision par ordinateur.",
             "item2": "<strong>IA</strong>: Analyse automatique.",
             "item3": "<strong>Intégration de l'IA</strong>: Dans les applications."
+        },
+        "soft": {
+            "title": "Soft Skills",
+            "item1": "<strong>Leadership & Management</strong>: Encadrement d'équipes et de projets.",
+            "item2": "<strong>Gestion de projet</strong>: Méthodologies Agiles, Scrum.",
+            "item3": "<strong>Adaptabilité</strong>: Capacité à évoluer dans des contextes variés.",
+            "item4": "<strong>Vision stratégique</strong>: Accompagnement de la croissance produit."
+        },
+        "languages": {
+            "title": "Langues",
+            "item1": "<strong>Français</strong>: Maternel.",
+            "item2": "<strong>Anglais</strong>: Professionnel."
         }
     },
     "experience": {
@@ -89,7 +103,7 @@
         },
         "project2": {
             "title": "RacesConnect – Canicompet",
-            "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions.",
+            "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions. <strong>+20 000 utilisateurs actifs</strong>.",
             "link": "Voir le site"
         },
         "project3": {

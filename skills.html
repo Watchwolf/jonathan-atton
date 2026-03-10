@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Compétences de Jonathan Atton - Développeur Fullstack.">
+    <title>Jonathan Atton - Compétences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">JA</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
+                    <li class="lang-switcher">
+                        <button id="lang-btn" class="lang-btn">EN</button>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="skills.title">Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.backend.title">Back-end</h3>
+                        <ul>
+                            <li data-i18n="skills.backend.item1"><strong>Python / Django</strong>: Maîtrise avancée,
+                                APIs RESTful.</li>
+                            <li data-i18n="skills.backend.item2"><strong>.NET / C#</strong>: Écosystème Microsoft, WPF,
+                                Analyse d'images, IA.</li>
+                            <li data-i18n="skills.backend.item3"><strong>WebSocket</strong>: Communication temps réel.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.frontend.title">Front-end</h3>
+                        <ul>
+                            <li data-i18n="skills.frontend.item1"><strong>Angular / Ionic</strong>: Applications web et
+                                mobiles modernes.</li>
+                            <li data-i18n="skills.frontend.item2"><strong>Microsoft Dynamics</strong>: Et PowerApps.
+                            </li>
+                            <li data-i18n="skills.frontend.item3"><strong>React</strong>: Avec intégration dans
+                                Microsoft Dynamics.</li>
+                            <li data-i18n="skills.frontend.item4"><strong>Python / PyQt</strong>: Interfaces de bureau.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.data.title">Data & Cloud</h3>
+                        <ul>
+                            <li data-i18n="skills.data.item1"><strong>SQL</strong>: Bases de données relationnelles,
+                                optimisation.</li>
+                            <li data-i18n="skills.data.item2"><strong>Cloud (OVH)</strong>: Déploiement, gestion
+                                d'infrastructure.</li>
+                            <li data-i18n="skills.data.item3"><strong>OS</strong>: Linux, MacOS, Windows.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.ia.title">R&D / IA</h3>
+                        <ul>
+                            <li data-i18n="skills.ia.item1"><strong>OpenCV / Emgu</strong>: Vision par ordinateur.</li>
+                            <li data-i18n="skills.ia.item2"><strong>IA</strong>: Analyse automatique.</li>
+                            <li data-i18n="skills.ia.item3"><strong>Intégration de l'IA</strong>: Dans les applications.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.soft.title">Soft Skills</h3>
+                        <ul>
+                            <li data-i18n="skills.soft.item1"><strong>Leadership & Management</strong>: Encadrement d'équipes et de projets.</li>
+                            <li data-i18n="skills.soft.item2"><strong>Gestion de projet</strong>: Méthodologies Agiles, Scrum.</li>
+                            <li data-i18n="skills.soft.item3"><strong>Adaptabilité</strong>: Capacité à évoluer dans des contextes variés.</li>
+                            <li data-i18n="skills.soft.item4"><strong>Vision stratégique</strong>: Accompagnement de la croissance produit.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3 data-i18n="skills.languages.title">Langues</h3>
+                        <ul>
+                            <li data-i18n="skills.languages.item1"><strong>Français</strong>: Maternel.</li>
+                            <li data-i18n="skills.languages.item2"><strong>Anglais</strong>: Professionnel.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Navigation -->
+        <div class="container">
+            <nav class="page-nav">
+                <a href="index.html" class="page-nav-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span data-i18n="nav.nav_prev">Précédent</span> : <span data-i18n="nav.about">À propos</span>
+                </a>
+                <a href="experience.html" class="page-nav-btn next">
+                    <span data-i18n="nav.nav_next">Suivant</span> : <span data-i18n="nav.experience">Expériences</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Watchwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
+                    title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+            <p data-i18n="footer.rights">&copy; 2026 Jonathan Atton. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

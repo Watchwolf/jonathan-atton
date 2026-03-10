@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 "skills": "Compétences",
                 "experience": "Expériences",
                 "portfolio": "Portfolio",
-                "sports": "Sports"
+                "sports": "Sports",
+                "nav_prev": "Précédent",
+                "nav_next": "Suivant"
             },
             "hero": {
                 "title": "Jonathan Atton",
@@ -48,6 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     "item1": "<strong>OpenCV / Emgu</strong>: Vision par ordinateur.",
                     "item2": "<strong>IA</strong>: Analyse automatique.",
                     "item3": "<strong>Intégration de l'IA</strong>: Dans les applications."
+                },
+                "soft": {
+                    "title": "Soft Skills",
+                    "item1": "<strong>Leadership & Management</strong>: Encadrement d'équipes et de projets.",
+                    "item2": "<strong>Gestion de projet</strong>: Méthodologies Agiles, Scrum.",
+                    "item3": "<strong>Adaptabilité</strong>: Capacité à évoluer dans des contextes variés.",
+                    "item4": "<strong>Vision stratégique</strong>: Accompagnement de la croissance produit."
+                },
+                "languages": {
+                    "title": "Langues",
+                    "item1": "<strong>Français</strong>: Maternel.",
+                    "item2": "<strong>Anglais</strong>: Professionnel."
                 }
             },
             "experience": {
@@ -92,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 "project2": {
                     "title": "RacesConnect – Canicompet",
-                    "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions.",
+                    "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions. <strong>+20 000 utilisateurs actifs</strong>.",
                     "link": "Voir le site"
                 },
                 "project3": {
@@ -125,7 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 "skills": "Skills",
                 "experience": "Experience",
                 "portfolio": "Portfolio",
-                "sports": "Sports"
+                "sports": "Sports",
+                "nav_prev": "Previous",
+                "nav_next": "Next"
             },
             "hero": {
                 "title": "Jonathan Atton",
@@ -166,6 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     "item1": "<strong>OpenCV / Emgu</strong>: Computer vision.",
                     "item2": "<strong>AI</strong>: Automatic analysis.",
                     "item3": "<strong>AI Integration</strong>: Into applications."
+                },
+                "soft": {
+                    "title": "Soft Skills",
+                    "item1": "<strong>Leadership & Management</strong>: Team and project management.",
+                    "item2": "<strong>Project Management</strong>: Agile methodologies, Scrum.",
+                    "item3": "<strong>Adaptability</strong>: Ability to evolve in various contexts.",
+                    "item4": "<strong>Strategic Vision</strong>: Supporting product growth."
+                },
+                "languages": {
+                    "title": "Languages",
+                    "item1": "<strong>French</strong>: Native.",
+                    "item2": "<strong>English</strong>: Professional."
                 }
             },
             "experience": {
@@ -210,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 "project2": {
                     "title": "RacesConnect – Canicompet",
-                    "desc": "Registration management and timing platforms for competitions.",
+                    "desc": "Registration management and timing platforms for competitions. <strong>20,000+ active users</strong>.",
                     "link": "Visit site"
                 },
                 "project3": {
@@ -277,17 +305,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial load
     applyTranslations(currentLang);
 
-    // Automatic Theme Detection
-    const updateTheme = () => {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    // Theme Toggle Logic
+    const themeBtn = document.getElementById('theme-toggle');
+    let currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+
+    const applyTheme = (theme) => {
+        if (theme === 'light') {
             document.body.classList.add('light-mode');
         } else {
             document.body.classList.remove('light-mode');
         }
+        localStorage.setItem('theme', theme);
     };
 
-    updateTheme(); // Initial check
-    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', updateTheme);
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            currentTheme = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+            applyTheme(currentTheme);
+        });
+    }
+
+    applyTheme(currentTheme); // Initial check
+
 
 
     // Mobile Menu Toggle
@@ -326,26 +365,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
 
-    // Smooth Scrolling & Active Link Highlighting
-    const sections = document.querySelectorAll('section');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
+    // Active Link Highlighting for Multi-page
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        } else {
             link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
+        }
     });
 });
