@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "portfolio": {
                 "title": "Portfolio",
                 "project1": {
-                    "title": "Son espace santé / refuge / éleveur",
-                    "desc": "Solution complète de gestion du bien-être et du suivi administratif pour les propriétaires d'animaux, les refuges et les éleveurs.",
+                    "title": "Son espace santé",
+                    "desc": "Solution complète de gestion du bien-être et du suivi administratif pour les propriétaires d'animaux.",
                     "link": "Voir le site"
                 },
                 "project2": {
@@ -242,8 +242,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "portfolio": {
                 "title": "Portfolio",
                 "project1": {
-                    "title": "Son Espace Santé / Refuge / Éleveur",
-                    "desc": "Complete health and administrative tracking solution for pet owners, shelters, and breeders.",
+                    "title": "Son Espace Santé",
+                    "desc": "Complete health and administrative tracking solution for pet owners.",
                     "link": "Visit site"
                 },
                 "project2": {

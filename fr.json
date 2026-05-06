@@ -102,8 +102,8 @@
     "portfolio": {
         "title": "Portfolio",
         "project1": {
-            "title": "Son espace santé / refuge / éleveur",
-            "desc": "Solution complète de gestion du bien-être et du suivi administratif pour les propriétaires d'animaux, les refuges et les éleveurs.",
+            "title": "Son espace santé",
+            "desc": "Solution complète de gestion du bien-être et du suivi administratif pour les propriétaires d'animaux.",
             "link": "Voir le site"
         },
         "project2": {
