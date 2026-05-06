@@ -66,6 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "experience": {
                 "title": "Expériences",
+                "exp0": {
+                    "date": "01/2025 – Aujourd’hui",
+                    "title": "Son Espace Santé (Side project)",
+                    "desc": "Application mobile pour gérer le passeport numérique des animaux et diverses fonctionnalités. <a href=\"https://sonespacesante.fr\" target=\"_blank\">sonespacesante.fr</a>"
+                },
                 "exp1": {
                     "date": "10/2025 – Aujourd’hui",
                     "title": "Développeur sénior – TVH Consulting",
@@ -73,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 "exp2": {
                     "date": "12/2016 – Aujourd’hui",
-                    "title": "Création de la plateforme RacesConnect",
-                    "desc": "Création et promotion des plateformes mobiles <a href=\"https://racesconnect.com\" target=\"_blank\">RacesConnect</a> et <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Gestion des inscriptions et chronométrage."
+                    "title": "Création de la plateforme Canicompet",
+                    "desc": "Création et promotion de la plateforme mobile <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Gestion des inscriptions et chronométrage."
                 },
                 "exp3": {
                     "date": "06/2020 – 02/2025",
@@ -105,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "link": "Voir le site"
                 },
                 "project2": {
-                    "title": "RacesConnect – Canicompet",
+                    "title": "Canicompet",
                     "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions. <strong>+20 000 utilisateurs actifs</strong>.",
                     "link": "Voir le site"
                 },
@@ -198,6 +203,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "experience": {
                 "title": "Experience",
+                "exp0": {
+                    "date": "01/2025 – Present",
+                    "title": "Son Espace Santé (Side project)",
+                    "desc": "Mobile application for managing digital pet passports and various features. <a href=\"https://sonespacesante.fr\" target=\"_blank\">sonespacesante.fr</a>"
+                },
                 "exp1": {
                     "date": "10/2025 – Present",
                     "title": "Senior Developer – TVH Consulting",
@@ -205,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 "exp2": {
                     "date": "12/2016 – Present",
-                    "title": "Creation of RacesConnect Platform",
-                    "desc": "Creation and promotion of mobile platforms <a href=\"https://racesconnect.com\" target=\"_blank\">RacesConnect</a> and <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Registration management and timing."
+                    "title": "Creation of Canicompet Platform",
+                    "desc": "Creation and promotion of the mobile platform <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Registration management and timing."
                 },
                 "exp3": {
                     "date": "06/2020 – 02/2025",
@@ -237,8 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     "link": "Visit site"
                 },
                 "project2": {
-                    "title": "RacesConnect – Canicompet",
-                    "desc": "Registration management and timing platforms for competitions. <strong>20,000+ active users</strong>.",
+                    "title": "Canicompet",
+                    "desc": "Registration management and timing platform for competitions. <strong>20,000+ active users</strong>.",
                     "link": "Visit site"
                 },
                 "project3": {

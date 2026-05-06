@@ -63,6 +63,11 @@
     },
     "experience": {
         "title": "Expériences",
+        "exp0": {
+            "date": "01/2025 – Aujourd’hui",
+            "title": "Son Espace Santé (Side project)",
+            "desc": "Application mobile pour gérer le passeport numérique des animaux et diverses fonctionnalités. <a href=\"https://sonespacesante.fr\" target=\"_blank\">sonespacesante.fr</a>"
+        },
         "exp1": {
             "date": "10/2025 – Aujourd’hui",
             "title": "Développeur sénior – TVH Consulting",
@@ -70,8 +75,8 @@
         },
         "exp2": {
             "date": "12/2016 – Aujourd’hui",
-            "title": "Création de la plateforme RacesConnect",
-            "desc": "Création et promotion des plateformes mobiles <a href=\"https://racesconnect.com\" target=\"_blank\">RacesConnect</a> et <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Gestion des inscriptions et chronométrage."
+            "title": "Création de la plateforme Canicompet",
+            "desc": "Création et promotion de la plateforme mobile <a href=\"https://canicompet.com\" target=\"_blank\">Canicompet</a>. Gestion des inscriptions et chronométrage."
         },
         "exp3": {
             "date": "06/2020 – 02/2025",
@@ -102,8 +107,8 @@
             "link": "Voir le site"
         },
         "project2": {
-            "title": "RacesConnect – Canicompet",
-            "desc": "Plateformes de gestion d'inscriptions et chronométrage de compétitions. <strong>+20 000 utilisateurs actifs</strong>.",
+            "title": "Canicompet",
+            "desc": "Plateforme de gestion d'inscriptions et chronométrage de compétitions. <strong>+20 000 utilisateurs actifs</strong>.",
             "link": "Voir le site"
         },
         "project3": {
