@@ -1,0 +1,35 @@
+# Jonathan Atton - Fullstack Developer
+
+## Profile
+Senior software developer with multi-sector experience (banking, legal, GDPR, analysis laboratories, sports). Expert in building complex software solutions and managing product lifecycles.
+
+## Core Skills
+- **Backend**: Python (Django, REST APIs), .NET (C#, WPF), WebSockets.
+- **Frontend**: Angular, Ionic, React, Microsoft Dynamics 365, PowerApps.
+- **Data & Cloud**: SQL, OVH Cloud, Linux/MacOS/Windows.
+- **R&D / AI**: OpenCV, AI integration, Automatic analysis.
+- **Soft Skills**: Leadership, Agile Project Management (Scrum), Strategic Vision.
+
+## Current Roles & Projects
+- **TVH Consulting**: Senior Developer (Microsoft Dynamics, Canvas Apps, React).
+- **Son Espace Santé**: Side project. Mobile app for digital pet passports. [sonespacesante.fr](https://sonespacesante.fr)
+- **Canicompet**: Founder. Mobile platform for competition registration and timing. [canicompet.com](https://canicompet.com)
+- **CaniGPS**: Founder. Dog GPS tracking solution. [canigps.fr](https://canigps.fr)
+
+## Experience Highlights
+- **Eurofins**: R&D on automatic analysis by electron microscope (AI, Automation).
+- **ActeCil**: IT Manager (GDPR SaaS tools, infrastructure).
+- **Euro Information (Crédit Mutuel CIC)**: Web developer (CMS, statistics).
+
+## Education & Certifications
+- Master's degree in Software Engineering.
+
+## Interests
+- **Sports**: Canicross, Triathlon, Xterra (French & World championships participant).
+- **Community**: President of Cani'Compet Alsace.
+
+## Contact
+- Website: [jonathanatton.com](https://jonathanatton.com)
+- LinkedIn: [linkedin.com/in/jonathan-atton-4286495b/](https://www.linkedin.com/in/jonathan-atton-4286495b/)
+- GitHub: [github.com/Watchwolf](https://github.com/Watchwolf)
+- Email: jonathan.atton@gmail.com
