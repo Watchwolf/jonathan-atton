@@ -57,6 +57,23 @@ a {
     transition: var(--transition);
 }
 
+/* Style inline links in text content */
+.timeline-content p a,
+.about-content p a,
+.sports-content p a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.timeline-content p a:hover,
+.about-content p a:hover,
+.sports-content p a:hover {
+    text-decoration-thickness: 2px;
+    opacity: 0.8;
+}
+
 a:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
