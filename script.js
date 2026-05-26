@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "experience": "Expériences",
                 "portfolio": "Portfolio",
                 "sports": "Sports",
+                "contact": "Contact",
                 "nav_prev": "Précédent",
                 "nav_next": "Suivant"
             },
@@ -157,6 +158,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 "p1": "Athlète accompli et passionné, je pratique régulièrement le canicross, le caniVTT, le triathlon et le Xterra. J’ai participé à plusieurs championnats de France, d’Europe et du Monde.",
                 "p2": "Cette discipline m'apporte résilience et capacité à atteindre des objectifs ambitieux. Je suis également président du club <strong>Cani’Compet Alsace</strong> et organisateur du <a href=\"https://canicrossdebenfeld.canicompet.com/\" target=\"_blank\">canicross de Benfeld</a>."
             },
+            "contact": {
+                "title": "Contact",
+                "info_title": "Parlons de votre projet",
+                "info_desc": "Que ce soit pour une collaboration, une question technique ou une opportunité, je serais heureux de vous entendre.",
+                "email_label": "Email",
+                "phone_label": "Téléphone",
+                "location_label": "Localisation",
+                "location_value": "Alsace - Moselle, France",
+                "firstName_label": "Prénom",
+                "lastName_label": "Nom",
+                "subject_label": "Sujet",
+                "message_label": "Message",
+                "submit_button": "Envoyer",
+                "error_message": "Une erreur est survenue. Veuillez réessayer ou m'envoyer un email directement.",
+                "success_title": "Message envoyé !",
+                "success_message": "Merci pour votre message. Je vous répondrai dans les plus brefs délais.",
+                "send_another": "Envoyer un autre message"
+            },
             "footer": {
                 "rights": "© 2026 Jonathan Atton. Tous droits réservés."
             }
@@ -168,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "experience": "Experience",
                 "portfolio": "Portfolio",
                 "sports": "Sports",
+                "contact": "Contact",
                 "nav_prev": "Previous",
                 "nav_next": "Next"
             },
@@ -293,6 +313,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 "title": "Sports",
                 "p1": "An accomplished and passionate athlete, I regularly practice canicross, bikejorning, triathlon, and Xterra. I have participated in several French, European, and World championships.",
                 "p2": "This discipline brings me resilience and the ability to achieve ambitious goals. I am also president of the <strong>Cani’Compet Alsace</strong> club and organizer of the <a href=\"https://canicrossdebenfeld.canicompet.com/\" target=\"_blank\">Benfeld Canicross</a>."
+            },
+            "contact": {
+                "title": "Contact",
+                "info_title": "Let's discuss your project",
+                "info_desc": "Whether for collaboration, technical questions, or opportunities, I'd be happy to hear from you.",
+                "email_label": "Email",
+                "phone_label": "Phone",
+                "location_label": "Location",
+                "location_value": "Alsace - Moselle, France",
+                "firstName_label": "First Name",
+                "lastName_label": "Last Name",
+                "subject_label": "Subject",
+                "message_label": "Message",
+                "submit_button": "Send",
+                "error_message": "An error occurred. Please try again or email me directly.",
+                "success_title": "Message sent!",
+                "success_message": "Thank you for your message. I'll get back to you as soon as possible.",
+                "send_another": "Send another message"
             },
             "footer": {
                 "rights": "© 2026 Jonathan Atton. All rights reserved."

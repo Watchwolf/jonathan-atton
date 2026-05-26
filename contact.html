@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Jonathan Atton - Développeur Fullstack.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact - Jonathan Atton">
+    <meta property="og:description" content="Formulaire de contact pour Jonathan Atton - Développeur Fullstack">
+    <meta property="og:url" content="https://jonathanatton.com/contact.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://jonathanatton.com/contact.html">
+
+    <title>Jonathan Atton - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="contact.title">Contact</h2>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info fade-in">
+                        <h3 data-i18n="contact.info_title">Parlons de votre projet</h3>
+                        <p data-i18n="contact.info_desc">Que ce soit pour une collaboration, une question technique ou une opportunité, je serais heureux de vous entendre.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail fade-in">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong data-i18n="contact.email_label">Email</strong>
+                                    <a href="mailto:jonathan.atton@gmail.com">jonathan.atton@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail fade-in">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong data-i18n="contact.phone_label">Téléphone</strong>
+                                    <a href="tel:+33620017101">+33 620 017 101</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail fade-in">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong data-i18n="contact.location_label">Localisation</strong>
+                                    <span data-i18n="contact.location_value">Alsace - Moselle, France</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials fade-in">
+                            <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Watchwolf" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper fade-in">
+                        <div id="contactFormContainer" class="contact-form-container">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="firstName" data-i18n="contact.firstName_label">Prénom</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="Jean">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastName" data-i18n="contact.lastName_label">Nom</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Dupont">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" data-i18n="contact.email_label">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" data-i18n="contact.subject_label">Sujet</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Collaboration, question, opportunité...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" data-i18n="contact.message_label">Message</label>
+                                    <textarea id="message" name="message" required rows="6" placeholder="Décrivez votre message..."></textarea>
+                                </div>
+
+                                <div id="errorMessage" class="error-message" style="display: none;">
+                                    <i class="fa-solid fa-exclamation-circle"></i>
+                                    <span data-i18n="contact.error_message">Une erreur est survenue. Veuillez réessayer ou m'envoyer un email directement.</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" data-i18n="contact.submit_button">
+                                    <i class="fa-solid fa-paper-plane"></i> Envoyer
+                                </button>
+                            </form>
+                        </div>
+
+                        <div id="successState" class="success-state" style="display: none;">
+                            <div class="success-content">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <h3 data-i18n="contact.success_title">Message envoyé !</h3>
+                                <p data-i18n="contact.success_message">Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+                                <button type="button" class="btn btn-secondary" id="resetForm" data-i18n="contact.send_another">
+                                    Envoyer un autre message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Navigation -->
+        <div class="container">
+            <nav class="page-nav">
+                <a href="sports.html" class="page-nav-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span data-i18n="nav.sports">Sports</span>
+                </a>
+                <a href="index.html" class="page-nav-btn next">
+                    <span data-i18n="nav.about">À propos</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

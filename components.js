@@ -12,6 +12,7 @@ const components = {
             <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
             <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             <li class="lang-switcher">
               <button id="lang-btn" class="lang-btn" aria-label="Changer la langue / Change language">EN</button>
             </li>

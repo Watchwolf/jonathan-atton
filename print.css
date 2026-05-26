@@ -306,6 +306,41 @@
         page-break-inside: avoid;
     }
 
+    /* Contact page hide form for print */
+    .contact-form-wrapper {
+        display: none;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info h3 {
+        font-size: 14pt;
+    }
+
+    .contact-details {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .contact-detail {
+        gap: 12px;
+        page-break-inside: avoid;
+    }
+
+    .contact-detail i {
+        font-size: 1.2rem;
+    }
+
+    .contact-socials {
+        gap: 8px;
+    }
+
+    .contact-socials a {
+        display: none;
+    }
+
     @page {
         margin: 0.5in;
         size: letter;
