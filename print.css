@@ -1,0 +1,313 @@
+/* Print Styles - Optimized for recruiters printing the CV */
+
+@media print {
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --primary-color: #059669;
+        --card-border: #e5e7eb;
+    }
+
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    /* Hide navigation, footer, buttons, socials */
+    .header,
+    .footer,
+    .page-nav,
+    .hero-socials,
+    .mobile-menu-btn,
+    .theme-toggle,
+    .lang-btn {
+        display: none !important;
+    }
+
+    /* Main content */
+    main {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hero - condensed to essential info */
+    .hero {
+        min-height: auto;
+        padding: 0 0 20px 0;
+        background: none;
+        text-align: left;
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .hero-img-container {
+        margin-bottom: 0;
+    }
+
+    .hero-img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+    }
+
+    .hero-title {
+        font-size: 24pt;
+        margin-bottom: 4px;
+    }
+
+    .hero-subtitle {
+        font-size: 14pt;
+        margin-bottom: 8px;
+    }
+
+    .hero-location {
+        font-size: 10pt;
+        margin-bottom: 4px;
+    }
+
+    .hero-text {
+        font-size: 10pt;
+        margin-bottom: 8px;
+    }
+
+    .hero-actions {
+        display: none;
+    }
+
+    /* Contact info visible */
+    .hero-location::before {
+        content: "📍 ";
+    }
+
+    /* Sections */
+    .section {
+        page-break-inside: avoid;
+        padding: 20px 0;
+        border: none;
+    }
+
+    .section-title {
+        font-size: 16pt;
+        margin-bottom: 12px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .section-title::after {
+        display: none;
+    }
+
+    .alt-bg {
+        background: white;
+        border: none;
+    }
+
+    /* About section */
+    .about-content {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .about-content p {
+        margin-bottom: 8px;
+        font-size: 10pt;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 8px;
+    }
+
+    .tag {
+        background: #f3f4f6;
+        border: 1px solid #d1d5db;
+        padding: 3px 8px;
+        font-size: 9pt;
+    }
+
+    /* Tech stack carousel */
+    .tech-stack-section {
+        page-break-inside: avoid;
+        display: none;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .skill-card {
+        page-break-inside: avoid;
+        border: 1px solid #d1d5db;
+        padding: 12px;
+        background: #f9fafb;
+    }
+
+    .skill-card h3 {
+        font-size: 11pt;
+        margin-bottom: 6px;
+        border: none;
+        padding: 0;
+        color: #059669;
+    }
+
+    .skill-card ul li {
+        margin-bottom: 4px;
+        font-size: 9.5pt;
+    }
+
+    /* Timeline */
+    .timeline {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        page-break-inside: avoid;
+        padding-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .timeline-date {
+        font-size: 9pt;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    .timeline-content h3 {
+        font-size: 12pt;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    .timeline-content p {
+        font-size: 10pt;
+        margin-bottom: 4px;
+    }
+
+    .tech-stack {
+        font-size: 9pt;
+        font-weight: normal;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .project-card {
+        page-break-inside: avoid;
+        border: 1px solid #d1d5db;
+        display: block;
+    }
+
+    .project-img {
+        display: none;
+    }
+
+    .project-card h3 {
+        padding: 0 0 6px 0;
+        font-size: 11pt;
+    }
+
+    .project-card p {
+        padding: 0;
+        font-size: 9.5pt;
+        margin-bottom: 6px;
+    }
+
+    .project-link {
+        display: inline;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #059669;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .project-link::after {
+        content: " ↗";
+    }
+
+    /* Sports */
+    .sports-gallery {
+        display: none;
+    }
+
+    .sports-content {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .sports-content p {
+        font-size: 10pt;
+        margin-bottom: 6px;
+    }
+
+    /* Links in print */
+    a {
+        color: #059669;
+        text-decoration: underline;
+    }
+
+    a[target="_blank"]::after {
+        content: "";
+    }
+
+    /* Buttons as text */
+    .btn {
+        display: inline;
+        background: none;
+        border: none;
+        padding: 0;
+        color: #059669;
+        text-decoration: underline;
+        box-shadow: none;
+    }
+
+    /* Fade-in animations don't apply in print */
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Page breaks */
+    .skills-grid {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        margin: 0.5in;
+        size: letter;
+    }
+}

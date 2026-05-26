@@ -12,6 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Parallax effect on hero image
+    const heroImgContainer = document.querySelector('.hero-img-container');
+    if (heroImgContainer) {
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const parallaxValue = scrollY * 0.5;
+            heroImgContainer.style.transform = `translateY(${parallaxValue}px)`;
+        }, { passive: true });
+    }
+
     // Internationalization (i18n)
     const translations = {
         "fr": {
