@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "exp0": {
                     "date": "01/2025 – Aujourd’hui",
                     "title": "Son Espace Santé (Side project)",
-                    "desc": "Application mobile pour gérer le passeport numérique des animaux et diverses fonctionnalités. <a href=\"https://sonespacesante.fr\" target=\"_blank\">sonespacesante.fr</a>"
+                    "desc": "Application mobile pour gérer le passeport numérique des animaux et diverses fonctionnalités. <a href=\"https://sonespacesante.com\" target=\"_blank\" rel=\"noopener noreferrer\">sonespacesante.com</a> | <a href=\"https://apps.sonespacesante.com/login?demo=1\" target=\"_blank\" rel=\"noopener noreferrer\">Démo</a>"
                 },
                 "exp1": {
                     "date": "10/2025 – Aujourd’hui",
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "exp0": {
                     "date": "01/2025 – Present",
                     "title": "Son Espace Santé (Side project)",
-                    "desc": "Mobile application for managing digital pet passports and various features. <a href=\"https://sonespacesante.fr\" target=\"_blank\">sonespacesante.fr</a>"
+                    "desc": "Mobile application for managing digital pet passports and various features. <a href=\"https://sonespacesante.com\" target=\"_blank\" rel=\"noopener noreferrer\">sonespacesante.com</a> | <a href=\"https://apps.sonespacesante.com/login?demo=1\" target=\"_blank\" rel=\"noopener noreferrer\">Demo</a>"
                 },
                 "exp1": {
                     "date": "10/2025 – Present",
