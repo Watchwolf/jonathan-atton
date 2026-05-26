@@ -57,6 +57,16 @@ a {
     transition: var(--transition);
 }
 
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 ul {
     list-style: none;
 }

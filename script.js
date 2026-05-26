@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Inject reusable header and footer components
+    components.injectComponents();
+
+    // Clone tech logos for infinite marquee effect (instead of duplicating HTML)
+    const techLogosScroll = document.getElementById('tech-logos-scroll');
+    if (techLogosScroll) {
+        const originalImages = Array.from(techLogosScroll.querySelectorAll('img'));
+        originalImages.forEach(img => {
+            const clonedImg = img.cloneNode(true);
+            techLogosScroll.appendChild(clonedImg);
+        });
+    }
+
     // Internationalization (i18n)
     const translations = {
         "fr": {
@@ -305,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLang = currentLang === 'fr' ? 'en' : 'fr';
         localStorage.setItem('lang', currentLang);
         applyTranslations(currentLang);
+        updateHtmlLang(currentLang);
     };
 
     const langBtn = document.getElementById('lang-btn');
@@ -314,6 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial load
     applyTranslations(currentLang);
+    updateHtmlLang(currentLang);
 
     // Theme Toggle Logic
     const themeBtn = document.getElementById('theme-toggle');
@@ -377,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Active Link Highlighting for Multi-page
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    
+
     navLinks.forEach(link => {
         const linkPath = link.getAttribute('href');
         if (linkPath === currentPath) {
@@ -386,4 +401,28 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.remove('active');
         }
     });
+
+    // Easter egg — console message
+    const consoleArt = `
+ ╔═══════════════════════════════════════════════════════════════╗
+ ║  👋 Hey there! You're inspecting the code!                   ║
+ ║                                                               ║
+ ║  I'm Jonathan Atton, Fullstack Developer                     ║
+ ║  Senior Dev | Founder | Athlete | Open to opportunities     ║
+ ║                                                               ║
+ ║  📧 Contact: jonathan.atton@gmail.com                        ║
+ ║  🔗 LinkedIn: linkedin.com/in/jonathan-atton-4286495b        ║
+ ║  💻 GitHub: github.com/Watchwolf                            ║
+ ║  🌐 Portfolio: jonathanatton.com                             ║
+ ║                                                               ║
+ ║  If you're recruiting, let's connect! 🚀                     ║
+ ╚═══════════════════════════════════════════════════════════════╝
+    `;
+    console.log(consoleArt);
+    console.log('%cBuilt with vanilla HTML/CSS/JS + Progressive Enhancement', 'color: #10b981; font-size: 14px; font-weight: bold;');
 });
+
+// Set HTML lang attribute dynamically
+function updateHtmlLang(lang) {
+    document.documentElement.lang = lang === 'en' ? 'en' : 'fr';
+}

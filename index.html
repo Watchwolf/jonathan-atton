@@ -4,46 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio de Jonathan Atton - Développeur Fullstack, Président Cani'Compet Alsace, Sportif.">
+    <meta name="description" content="Développeur Fullstack senior avec 15+ ans d'expérience. Expert Python/Django, Angular, React. Fondateur de Canicompet (20k+ utilisateurs).">
+    <meta name="keywords" content="Jonathan Atton, Développeur, Fullstack, Python, Django, Angular, React, Alsace">
+    <meta name="author" content="Jonathan Atton">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jonathan Atton - Développeur Fullstack">
+    <meta property="og:description" content="Senior Developer | Fullstack | Python, Django, Angular, React | Fondateur Canicompet">
+    <meta property="og:url" content="https://jonathanatton.com">
+    <meta property="og:image" content="https://jonathanatton.com/images/jonathan_atton_profile.jpg">
+    <meta property="og:site_name" content="Jonathan Atton Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonathan Atton - Développeur Fullstack">
+    <meta name="twitter:description" content="Senior Developer | Fullstack | Python, Django, Angular, React">
+    <meta name="twitter:image" content="https://jonathanatton.com/images/jonathan_atton_profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://jonathanatton.com">
+
     <title>Jonathan Atton - Développeur Fullstack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JSON-LD Schema.org Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jonathan Atton",
+      "jobTitle": "Senior Fullstack Developer",
+      "url": "https://jonathanatton.com",
+      "image": "https://jonathanatton.com/images/jonathan_atton_profile.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/jonathan-atton-4286495b/",
+        "https://github.com/Watchwolf"
+      ],
+      "contact": {
+        "@type": "ContactPoint",
+        "contactType": "Professional Contact",
+        "email": "jonathan.atton@gmail.com",
+        "telephone": "+33620017101"
+      },
+      "knowsAbout": [
+        "Python", "Django", "Angular", "React", "C#", ".NET",
+        "SQL", "Microsoft Dynamics", "PowerApps", "WebSocket",
+        "Full-stack Development", "Team Leadership", "Agile"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TVH Consulting"
+      }
+    }
+    </script>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">JA</a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
-                    <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
-                    <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
-                    <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
-                    <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
-                    <li class="lang-switcher">
-                        <button id="lang-btn" class="lang-btn">EN</button>
-                    </li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-                            <i class="fa-solid fa-moon"></i>
-                            <i class="fa-solid fa-sun"></i>
-                        </button>
-                    </li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </nav>
-        </div>
-    </header>
+    <header class="header"></header>
 
     <main>
         <!-- Hero Section -->
@@ -51,7 +78,7 @@
             <div class="container hero-content">
                 <div class="hero-img-container fade-in">
                     <img src="images/jonathan_atton_profile.jpg"
-                        alt="Jonathan Atton" class="hero-img">
+                        alt="Jonathan Atton - Développeur Fullstack" class="hero-img">
                 </div>
                 <h1 class="hero-title fade-in" data-i18n="hero.title">Jonathan Atton</h1>
                 <h2 class="hero-subtitle fade-in" data-i18n="hero.subtitle">Développeur Fullstack</h2>
@@ -62,12 +89,12 @@
                     triathlon</p>
 
                 <div class="hero-socials fade-in">
-                    <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" title="LinkedIn"><i
+                    <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Watchwolf" target="_blank" title="GitHub"><i
+                    <a href="https://github.com/Watchwolf" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                             class="fa-brands fa-github"></i></a>
-                    <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
-                        title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
+                    <a href="Jonathan-Atton-CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n-title="hero.cv_title"
+                        title="Télécharger mon CV" download aria-label="Télécharger CV"><i class="fa-solid fa-file-pdf"></i></a>
                 </div>
 
                 <div class="hero-actions fade-in">
@@ -117,7 +144,7 @@
         <section class="tech-stack-section alt-bg">
             <div class="container">
                 <div class="tech-logos-wrapper fade-in">
-                    <div class="tech-logos">
+                    <div class="tech-logos" id="tech-logos-scroll">
                         <img src="images/python.png" alt="Python" title="Python">
                         <img src="images/python-django-1024x341.png" alt="Django" title="Django">
                         <img src="images/angular.png" alt="Angular" title="Angular">
@@ -127,16 +154,6 @@
                         <img src="images/dynamics.png" alt="Microsoft Dynamics 365" title="Microsoft Dynamics 365">
                         <img src="images/powerapps.png" alt="PowerApps" title="PowerApps">
                         <img src="images/Microsoft_SQL_server_logo.png" alt="SQL Server" title="SQL Server">
-                        <!-- Duplicate for infinite scroll -->
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/python-django-1024x341.png" alt="Django">
-                        <img src="images/angular.png" alt="Angular">
-                        <img src="images/react.png" alt="React">
-                        <img src="images/ionic.png" alt="Ionic">
-                        <img src="images/csharp.png" alt="C#">
-                        <img src="images/dynamics.png" alt="Microsoft Dynamics 365">
-                        <img src="images/powerapps.png" alt="PowerApps">
-                        <img src="images/Microsoft_SQL_server_logo.png" alt="SQL Server">
                     </div>
                 </div>
             </div>
@@ -153,19 +170,9 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Watchwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
-                    title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
-            </div>
-            <p data-i18n="footer.rights">&copy; 2026 Jonathan Atton. Tous droits réservés.</p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
+    <script src="components.js"></script>
     <script src="script.js"></script>
 </body>
 

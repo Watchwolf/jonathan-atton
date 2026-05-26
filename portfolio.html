@@ -4,45 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Jonathan Atton - Projets et réalisations.">
+    <meta name="description" content="Portfolio de Jonathan Atton : Canicompet (20k+ utilisateurs), CaniGPS, Son Espace Santé, RacesConnect, CaniClub Connect.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio - Jonathan Atton">
+    <meta property="og:description" content="Projets et réalisations : 5 plateformes lancées avec succès">
+    <meta property="og:url" content="https://jonathanatton.com/portfolio.html">
+    <meta property="og:image" content="https://jonathanatton.com/images/racesconnect-1-1024x1024.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://jonathanatton.com/portfolio.html">
+
     <title>Jonathan Atton - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">JA</a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
-                    <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
-                    <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
-                    <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
-                    <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
-                    <li class="lang-switcher">
-                        <button id="lang-btn" class="lang-btn">EN</button>
-                    </li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-                            <i class="fa-solid fa-moon"></i>
-                            <i class="fa-solid fa-sun"></i>
-                        </button>
-                    </li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </nav>
-        </div>
-    </header>
+    <header class="header"></header>
 
     <main>
         <!-- Portfolio Section -->
@@ -51,44 +39,44 @@
                 <h2 class="section-title fade-in" data-i18n="portfolio.title">Portfolio</h2>
                 <div class="portfolio-grid">
                     <div class="project-card fade-in">
-                        <img src="images/son-espace-sante.png" alt="Espace Santé" class="project-img">
+                        <img src="images/son-espace-sante.png" alt="Son Espace Santé - Application mobile pour animaux de compagnie" class="project-img" loading="lazy">
                         <h3 data-i18n="portfolio.project1.title">Son espace santé</h3>
                         <p data-i18n="portfolio.project1.desc">Solution complète de gestion du bien-être et du suivi
                             administratif pour les propriétaires
                             d'animaux.</p>
-                        <a href="https://sonespacesante.fr" target="_blank" class="project-link"
+                        <a href="https://sonespacesante.fr" target="_blank" rel="noopener noreferrer" class="project-link"
                             data-i18n="portfolio.project1.link">Voir le site</a>
                     </div>
                     <div class="project-card fade-in">
-                        <img src="images/racesconnect-1-1024x1024.png" alt="Canicompet" class="project-img">
+                        <img src="images/racesconnect-1-1024x1024.png" alt="Canicompet - Plateforme canicross avec 20k+ utilisateurs" class="project-img" loading="lazy">
                         <h3 data-i18n="portfolio.project2.title">Canicompet</h3>
                         <p data-i18n="portfolio.project2.desc">Plateforme de gestion d'inscriptions et chronométrage de
                             compétitions. <strong>+20 000 utilisateurs actifs</strong>.</p>
-                        <a href="https://canicompet.com" target="_blank" class="project-link"
+                        <a href="https://canicompet.com" target="_blank" rel="noopener noreferrer" class="project-link"
                             data-i18n="portfolio.project2.link">Voir le site</a>
                     </div>
                     <div class="project-card fade-in">
-                        <img src="images/banner-1024x269.png" alt="RacesConnect Timing" class="project-img">
+                        <img src="images/banner-1024x269.png" alt="RacesConnect Timing - Logiciel de chronométrage pour compétitions" class="project-img" loading="lazy">
                         <h3 data-i18n="portfolio.project3.title">RacesConnect Timing</h3>
                         <p data-i18n="portfolio.project3.desc">Logiciel pour gérer les listes de départ et le
                             chronométrage des compétitions. Chronométrage
                             manuel ou automatique avec des puces.</p>
-                        <a href="https://racesconnect.com/racesconnect" target="_blank" class="project-link"
+                        <a href="https://racesconnect.com/racesconnect" target="_blank" rel="noopener noreferrer" class="project-link"
                             data-i18n="portfolio.project3.link">Voir le
                             site</a>
                     </div>
                     <div class="project-card fade-in">
-                        <img src="images/caniclub-connect.jpg" alt="CaniClub Connect" class="project-img">
+                        <img src="images/caniclub-connect.jpg" alt="CaniClub Connect - Application pour gestion de clubs canins" class="project-img" loading="lazy">
                         <h3 data-i18n="portfolio.project4.title">CaniClub Connect</h3>
                         <p data-i18n="portfolio.project4.desc">Application mobile pour clubs canins : gestion membres,
                             comm, boutique.</p>
                     </div>
                     <div class="project-card fade-in">
-                        <img src="images/canigps_apps-1024x299.png" alt="CaniGPS" class="project-img">
+                        <img src="images/canigps_apps-1024x299.png" alt="CaniGPS - Plateforme de suivi GPS pour chiens" class="project-img" loading="lazy">
                         <h3 data-i18n="portfolio.project5.title">CaniGPS</h3>
                         <p data-i18n="portfolio.project5.desc">Plateforme de géolocalisation et suivi d'activité pour
                             chiens.</p>
-                        <a href="https://canigps.fr" target="_blank" class="project-link"
+                        <a href="https://canigps.fr" target="_blank" rel="noopener noreferrer" class="project-link"
                             data-i18n="portfolio.project5.link">Voir le site</a>
                     </div>
                 </div>
@@ -110,19 +98,9 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Watchwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="20250625_compressed.pdf" target="_blank" data-i18n-title="hero.cv_title"
-                    title="Télécharger mon CV"><i class="fa-solid fa-file-pdf"></i></a>
-            </div>
-            <p data-i18n="footer.rights">&copy; 2026 Jonathan Atton. Tous droits réservés.</p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
+    <script src="components.js"></script>
     <script src="script.js"></script>
 </body>
 
