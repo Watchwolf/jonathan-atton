@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "exp1": {
                     "date": "10/2025 – Aujourd’hui",
                     "title": "Développeur sénior – TVH Consulting",
-                    "desc": "Intégrateur et développeur spécialisé sur la solution <strong>Microsoft Dynamics</strong>. Conception et déploiement d'applications métiers avancées exploitant la puissance de <strong>Canvas Apps</strong> et la flexibilité de <strong>React</strong> pour répondre aux besoins critiques de gestion d'entreprise."
+                    "desc": "Intégrateur et développeur spécialisé sur la solution <strong>Microsoft Dynamics</strong>. Conception et déploiement d’applications métiers avancées exploitant la puissance de <strong>Canvas Apps</strong> et la flexibilité de <strong>React</strong> pour répondre aux besoins des clients (TotalEnergies, Guinot ...)."
                 },
                 "exp2": {
                     "date": "12/2016 – Aujourd’hui",
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "exp1": {
                     "date": "10/2025 – Present",
                     "title": "Senior Developer – TVH Consulting",
-                    "desc": "Integrator and developer specialized in <strong>Microsoft Dynamics</strong> solutions. Design and deployment of advanced business applications leveraging <strong>Canvas Apps</strong> and the flexibility of <strong>React</strong> to meet critical business management needs."
+                    "desc": "Integrator and developer specialized in <strong>Microsoft Dynamics</strong> solutions. Design and deployment of advanced business applications leveraging <strong>Canvas Apps</strong> and the flexibility of <strong>React</strong> to meet client needs (TotalEnergies, Guinot ...)."
                 },
                 "exp2": {
                     "date": "12/2016 – Present",

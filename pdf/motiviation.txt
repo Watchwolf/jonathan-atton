@@ -1,0 +1,24 @@
+Bonjour,
+
+Je me permets de vous adresser ma candidature pour le poste de développeur Front-End au sein de votre entreprise.
+
+Fort de plusieurs années d’expérience dans le développement de logiciels web et mobiles, j’ai su développer des compétences techniques et stratégiques variées :
+
+- Adaptation rapide à de nouvelles technologies
+- Encadrement d'une petite équipe de développeurs
+- Prise de décisions stratégiques pour des projets complexes
+- Conception d’interfaces et de parcours utilisateur intuitifs
+- Élaboration et mise en œuvre de solutions techniques globales
+- Conception d'interfaces et parcours utilisateurs
+
+Ces dernières années, j’ai particulièrement travaillé sur des applications combinant Python/Django pour le back-end et Angular/Ionic pour le front-end, me permettant d’intervenir sur des projets nécessitant une expertise complète.
+
+Mes derniers projets :
+Site d’inscription et de chronométrage : https://racesconnect.com
+Plateforme de suivi GPS pour les chiens : https://canigps.fr
+
+Je serais ravi de mettre mes compétences et mon expérience au service de votre équipe, et je reste à votre disposition pour toute information complémentaire ou un échange autour de mes motivations.
+
+Dans l’attente de vous lire, je vous adresse mes salutations respectueuses.
+
+Cordialement,
