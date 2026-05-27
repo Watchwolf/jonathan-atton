@@ -189,6 +189,20 @@ ul {
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Hide icons on desktop, show only text */
+.nav-icon {
+    display: none;
+}
+
+/* Hide mobile utilities and mobile bottom nav on desktop */
+.mobile-utilities,
+.mobile-bottom-nav {
+    display: none;
 }
 
 .theme-toggle {
@@ -273,6 +287,7 @@ body:not(.light-mode) .theme-toggle .fa-sun {
     text-align: center;
     padding-top: var(--header-height);
     background: radial-gradient(circle at 50% 50%, var(--bg-alt-color) 0%, var(--bg-color) 100%);
+    position: relative;
 }
 
 .hero-title {
@@ -358,54 +373,43 @@ body:not(.light-mode) .theme-toggle .fa-sun {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-.scroll-indicator span {
-    display: block;
-    width: 24px;
-    height: 40px;
-    border: 2px solid var(--primary-color);
-    border-radius: 12px;
-    position: relative;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: opacity 0.3s ease;
 }
 
-.scroll-indicator span::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-    height: 8px;
-    background-color: var(--primary-color);
-    border-radius: 2px;
-    animation: scroll-bounce 2s infinite;
+.scroll-indicator.hidden {
+    opacity: 0 !important;
+    pointer-events: none;
 }
 
-.scroll-indicator:hover span {
+.scroll-indicator i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    animation: scroll-bounce 3s ease-in-out infinite;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+}
+
+.scroll-indicator:hover i {
     opacity: 1;
 }
 
 @keyframes scroll-bounce {
-    0% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
+    0%, 100% {
+        transform: translateY(0);
     }
     50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(12px);
+        transform: translateY(12px);
     }
 }
 
@@ -1022,9 +1026,65 @@ form {
         padding: 0 15px;
     }
 
+    /* Hero section optimizations for mobile */
+    .hero {
+        min-height: auto;
+        padding-top: var(--header-height);
+        padding-bottom: 40px;
+    }
+
+    .hero-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-img-container {
+        margin-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-location {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-text {
+        font-size: 0.95rem;
+        margin: 0 auto 1rem;
+    }
+
+    .hero-socials {
+        gap: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-socials a {
+        font-size: 1.5rem;
+    }
+
+    .hero-actions {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
     .header {
         height: auto;
-        min-height: var(--header-height);
+        min-height: 60px;
         display: flex;
         align-items: center;
     }
@@ -1032,6 +1092,7 @@ form {
     .header-container {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         gap: 15px;
     }
@@ -1041,48 +1102,109 @@ form {
         flex-shrink: 0;
     }
 
-    .nav {
-        position: static;
-        height: auto;
-        width: auto;
-        background: transparent;
-        padding-top: 0;
-        display: block;
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        flex-grow: 1;
+    /* Show mobile utilities on the top header */
+    .mobile-utilities {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-    .nav::-webkit-scrollbar {
+    /* Hide utility items inside the bottom nav-list (lang, theme) */
+    .header-utility {
         display: none;
     }
 
-    .nav-list {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 12px;
-        padding: 10px 0;
-        min-width: max-content;
+    /* Hide desktop nav on mobile */
+    .nav {
+        display: none;
     }
 
-    .nav-link {
-        font-size: 0.8rem;
-        white-space: nowrap;
+    /* Show mobile bottom navigation */
+    .mobile-bottom-nav {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        background: var(--bg-color);
+        border-top: 1px solid var(--card-border);
+        z-index: 1000;
+    }
+
+    .mobile-bottom-nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+    }
+
+    .mobile-bottom-nav-list li {
+        flex: 1;
+        height: 100%;
+    }
+
+    .mobile-nav-link {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        font-size: 0.65rem;
+        height: 100%;
+        width: 100%;
+        padding: 6px 0;
+        color: var(--text-muted);
+        text-decoration: none;
+        display: flex;
+        transition: color 0.3s ease;
+    }
+
+    /* Show icons inside mobile bottom nav */
+    .mobile-bottom-nav .nav-icon {
+        display: block;
+        font-size: 1.25rem;
+    }
+
+    /* Hide underline animation on mobile nav links */
+    .mobile-nav-link::after {
+        display: none;
+    }
+
+    .mobile-nav-link.active {
+        color: var(--primary-color);
+    }
+
+    .mobile-nav-link.active .nav-icon {
+        transform: translateY(-2px);
     }
 
     .lang-btn {
-        padding: 3px 6px;
-        font-size: 0.7rem;
-        min-width: 30px;
+        padding: 3px 8px;
+        font-size: 0.75rem;
+        min-width: 32px;
     }
 
     .theme-toggle {
-        width: 32px;
-        height: 32px;
-        font-size: 0.9rem;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
         border-radius: 8px;
+    }
+
+    /* Add bottom padding to body for fixed bottom nav */
+    body {
+        padding-bottom: 64px;
+    }
+
+    /* Adjust footer to not be hidden by bottom nav */
+    .footer {
+        margin-bottom: 0;
     }
 
     .hero-title {

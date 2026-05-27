@@ -7,30 +7,42 @@ const components = {
         <a href="index.html" class="logo">JA</a>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="index.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
-            <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
-            <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
-            <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
-            <li><a href="sports.html" class="nav-link" data-i18n="nav.sports">Sports</a></li>
-            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-            <li class="lang-switcher">
-              <button id="lang-btn" class="lang-btn" aria-label="Changer la langue / Change language">EN</button>
+            <li><a href="index.html" class="nav-link"><i class="fa-solid fa-user nav-icon"></i><span class="nav-text" data-i18n="nav.about">À propos</span></a></li>
+            <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-laptop-code nav-icon"></i><span class="nav-text" data-i18n="nav.skills">Compétences</span></a></li>
+            <li><a href="experience.html" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i><span class="nav-text" data-i18n="nav.experience">Expériences</span></a></li>
+            <li><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-folder-open nav-icon"></i><span class="nav-text" data-i18n="nav.portfolio">Portfolio</span></a></li>
+            <li><a href="sports.html" class="nav-link"><i class="fa-solid fa-person-running nav-icon"></i><span class="nav-text" data-i18n="nav.sports">Sports</span></a></li>
+            <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope nav-icon"></i><span class="nav-text" data-i18n="nav.contact">Contact</span></a></li>
+            <li class="lang-switcher header-utility">
+              <button class="lang-btn" aria-label="Changer la langue / Change language">EN</button>
             </li>
-            <li>
-              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+            <li class="header-utility">
+              <button class="theme-toggle" aria-label="Toggle Theme">
                 <i class="fa-solid fa-moon"></i>
                 <i class="fa-solid fa-sun"></i>
               </button>
             </li>
           </ul>
-          <button class="mobile-menu-btn" aria-label="Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
         </nav>
+        <div class="mobile-utilities">
+          <button class="lang-btn" aria-label="Changer la langue / Change language">EN</button>
+          <button class="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
       </div>
     </header>
+    <nav class="mobile-bottom-nav">
+      <ul class="mobile-bottom-nav-list">
+        <li><a href="index.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-user nav-icon"></i><span class="nav-text" data-i18n="nav.about">À propos</span></a></li>
+        <li><a href="skills.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-laptop-code nav-icon"></i><span class="nav-text" data-i18n="nav.skills">Compétences</span></a></li>
+        <li><a href="experience.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-briefcase nav-icon"></i><span class="nav-text" data-i18n="nav.experience">Expériences</span></a></li>
+        <li><a href="portfolio.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-folder-open nav-icon"></i><span class="nav-text" data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="sports.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-person-running nav-icon"></i><span class="nav-text" data-i18n="nav.sports">Sports</span></a></li>
+        <li><a href="contact.html" class="nav-link mobile-nav-link"><i class="fa-solid fa-envelope nav-icon"></i><span class="nav-text" data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+    </nav>
   `,
 
   footerHTML: `

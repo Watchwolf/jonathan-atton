@@ -12,24 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Parallax effect on hero image and scroll indicator fade-out
-    const heroImgContainer = document.querySelector('.hero-img-container');
+    // Scroll indicator fade-out when scrolling
     const scrollIndicator = document.querySelector('.scroll-indicator');
-    if (heroImgContainer) {
+    if (scrollIndicator) {
         window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const parallaxValue = scrollY * 0.5;
-            heroImgContainer.style.transform = `translateY(${parallaxValue}px)`;
-
-            // Fade out scroll indicator when user scrolls
-            if (scrollIndicator) {
-                if (scrollY > 100) {
-                    scrollIndicator.style.opacity = '0';
-                    scrollIndicator.style.pointerEvents = 'none';
-                } else {
-                    scrollIndicator.style.opacity = '1';
-                    scrollIndicator.style.pointerEvents = 'auto';
-                }
+            if (window.scrollY > 100) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
             }
         }, { passive: true });
     }
@@ -57,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "about": {
                 "title": "À propos",
-                "p1": "En tant que développeur logiciel sénior, je suis prêt à apporter une valeur ajoutée immédiate à votre entreprise. Mon expérience multisectorielle (banque, juridique, RGPD, laboratoire d’analyses, sport) me permet de comprendre et de m’adapter rapidement à des contextes variés. Mon expertise technique assure la création de solutions logiciels capables de répondre aux défis les plus complexes.",
-                "p2": "Au-delà du code, je mets à profit mes compétences complémentaires en matière de stratégie décisionnelle, de marketing et d’encadrement de projets & équipes pour assurer une gestion intégrée du cycle de vie produit."
+                "p1": "En tant que <strong>développeur logiciel sénior</strong>, j’apporte une <strong>valeur ajoutée immédiate</strong> à votre entreprise. Mon <strong>expérience multisectorielle</strong> (banque, juridique, RGPD, laboratoire d’analyses, sport) me permet de comprendre rapidement vos enjeux métier et d’être <strong>force de proposition</strong> dès le premier jour. Mon expertise technique assure la création de solutions capables de répondre aux défis les plus complexes.",
+                "p2": "Au-delà du code, je m’appuie sur des compétences complémentaires en stratégie décisionnelle, marketing et encadrement d’équipes. Cette <strong>vision 360°</strong> me permet de proposer des solutions innovantes, cohérentes avec vos objectifs business."
             },
             "skills": {
                 "title": "Compétences",
@@ -213,8 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "about": {
                 "title": "About",
-                "p1": "As a senior software developer, I am ready to bring immediate added value to your company. My multi-sector experience (banking, legal, GDPR, analysis laboratory, sports) allows me to understand and quickly adapt to various contexts. My technical expertise ensures the creation of software solutions capable of meeting the most complex challenges.",
-                "p2": "Beyond code, I leverage my complementary skills in decision-making strategy, marketing, and project & team management to ensure integrated product lifecycle management."
+                "p1": "As a senior software developer, I bring immediate added value to your company. My multi-sector experience (banking, legal, GDPR, analysis laboratory, sports) allows me to quickly understand your business challenges and be a <strong>driving force for innovation</strong> from day one. My technical expertise ensures the creation of solutions capable of meeting the most complex challenges.",
+                "p2": "Beyond code, I draw on complementary skills in decision-making strategy, marketing, and team management. This 360° vision allows me to propose innovative solutions aligned with your business goals."
             },
             "skills": {
                 "title": "Skills",
@@ -366,8 +356,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (value) el.setAttribute('title', value);
         });
 
-        const langBtn = document.getElementById('lang-btn');
-        if (langBtn) langBtn.textContent = lang === 'fr' ? 'EN' : 'FR';
+        // Update all lang buttons (desktop + mobile)
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.textContent = lang === 'fr' ? 'EN' : 'FR';
+        });
     };
 
     const getNestedValue = (obj, path) => {
@@ -381,17 +373,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHtmlLang(currentLang);
     };
 
-    const langBtn = document.getElementById('lang-btn');
-    if (langBtn) {
-        langBtn.addEventListener('click', toggleLang);
-    }
+    // Attach toggleLang to all lang buttons (desktop + mobile)
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', toggleLang);
+    });
 
     // Initial load
     applyTranslations(currentLang);
     updateHtmlLang(currentLang);
 
     // Theme Toggle Logic
-    const themeBtn = document.getElementById('theme-toggle');
     let currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
 
     const applyTheme = (theme) => {
@@ -403,35 +394,20 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', theme);
     };
 
-    if (themeBtn) {
-        themeBtn.addEventListener('click', () => {
+    // Attach theme toggle to all theme buttons (desktop + mobile)
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
             currentTheme = document.body.classList.contains('light-mode') ? 'dark' : 'light';
             applyTheme(currentTheme);
         });
-    }
+    });
 
     applyTheme(currentTheme); // Initial check
 
 
 
-    // Mobile Menu Toggle
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const header = document.querySelector('.header');
-    const nav = document.querySelector('.nav-list');
+    // Navigation references
     const navLinks = document.querySelectorAll('.nav-link');
-
-    mobileBtn.addEventListener('click', () => {
-        mobileBtn.classList.toggle('active');
-        document.querySelector('.nav').classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileBtn.classList.remove('active');
-            document.querySelector('.nav').classList.remove('active');
-        });
-    });
 
     // Intersection Observer for Fade-in Animations
     const observerOptions = {
