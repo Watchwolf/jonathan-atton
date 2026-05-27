@@ -12,13 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Parallax effect on hero image
+    // Parallax effect on hero image and scroll indicator fade-out
     const heroImgContainer = document.querySelector('.hero-img-container');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
     if (heroImgContainer) {
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const parallaxValue = scrollY * 0.5;
             heroImgContainer.style.transform = `translateY(${parallaxValue}px)`;
+
+            // Fade out scroll indicator when user scrolls
+            if (scrollIndicator) {
+                if (scrollY > 100) {
+                    scrollIndicator.style.opacity = '0';
+                    scrollIndicator.style.pointerEvents = 'none';
+                } else {
+                    scrollIndicator.style.opacity = '1';
+                    scrollIndicator.style.pointerEvents = 'auto';
+                }
+            }
         }, { passive: true });
     }
 
