@@ -1,35 +1,40 @@
-# Jonathan Atton - Fullstack Developer
+# Jonathan Atton — Senior Fullstack Developer & endurance athlete
+
+> Software built to go the distance. 15+ years designing web, mobile and business applications, from first idea to production — now bringing AI into business processes.
 
 ## Profile
-Senior software developer with multi-sector experience (banking, legal, GDPR, analysis laboratories, sports). Expert in building complex software solutions and managing product lifecycles.
+Senior software developer based in Alsace – Moselle (France), with multi-sector experience (banking, legal, GDPR, IT consulting, analysis laboratories, sports). Founder of Canicompet (20,000+ users) and CaniGPS. Takes the initiative, with a 360° vision combining technical expertise, decision-making, marketing and team leadership.
 
-## Core Skills
-- **Backend**: Python (Django, REST APIs), .NET (C#, WPF), WebSockets.
-- **Frontend**: Angular, Ionic, React, Microsoft Dynamics 365, PowerApps.
-- **Data & Cloud**: SQL, OVH Cloud, Linux/MacOS/Windows.
-- **R&D / AI**: OpenCV, AI integration, Automatic analysis.
-- **Soft Skills**: Leadership, Agile Project Management (Scrum), Strategic Vision.
+## AI & automation
+- Builds AI-powered applications: LLM integration, business assistants, document analysis, search and content generation.
+- Automates business processes: workflows and agents connected to existing tools (Microsoft Dynamics 365, APIs, databases).
+- Scopes AI initiatives: where AI creates real value, solution choice, GDPR and data-security compliance.
+- Background: computer-vision R&D at Eurofins (since 2018), AI features in Son Espace Santé.
 
-## Current Roles & Projects
-- **TVH Consulting**: Senior Developer (Microsoft Dynamics, Canvas Apps, React).
-- **Son Espace Santé**: Side project. Mobile app for digital pet passports. [sonespacesante.fr](https://sonespacesante.fr)
-- **Canicompet**: Founder. Mobile platform for competition registration and timing. [canicompet.com](https://canicompet.com)
-- **CaniGPS**: Founder. Dog GPS tracking solution. [canigps.fr](https://canigps.fr)
+## Core skills
+- **Back-end**: Python / Django (REST APIs), .NET / C# (WPF), WebSocket.
+- **Front-end & mobile**: Angular, Ionic, React, PyQt.
+- **Microsoft & CRM**: Dynamics 365, Power Apps / Canvas Apps, React components for Dynamics.
+- **Data & cloud**: SQL Server, MySQL, OVH, DevOps, Linux / macOS / Windows.
+- **Leadership**: team management, Agile / Scrum, key-account tenders, GDPR.
+- **Languages**: French (native), English (professional).
 
-## Experience Highlights
-- **Eurofins**: R&D on automatic analysis by electron microscope (AI, Automation).
-- **ActeCil**: IT Manager (GDPR SaaS tools, infrastructure).
-- **Euro Information (Crédit Mutuel CIC)**: Web developer (CMS, statistics).
+## Experience
+- **TVH Consulting** (10/2025 – present): Senior developer — Microsoft Dynamics 365, Canvas Apps, React (clients such as TotalEnergies, Guinot).
+- **Son Espace Santé** (01/2025 – present, side project): digital pet passport app with AI features. https://sonespacesante.com
+- **Canicompet** (12/2016 – present, founder): registration and race-timing platform, 20,000+ users. https://canicompet.com
+- **CaniGPS** (06/2020 – 02/2025, founder): GPS tracking for dogs. https://canigps.fr
+- **Eurofins** (04/2018 – 12/2022): Senior developer, lead developer of an R&D project on automated electron-microscope analysis (computer vision, AI).
+- **ActeCil** (01/2013 – 03/2018): IT manager — GDPR SaaS tools, infrastructure, team building, key-account tenders (Thales, La Poste).
+- **Euro Information / Crédit Mutuel CIC** (01/2010 – 01/2013): Developer — web tools, statistics, multi-site CMS, banking apps.
+- **Education**: Master's degree in Software Engineering (Nancy, 2009). Open-source contributor (Enlightenment / EFL), Google Summer of Code.
 
-## Education & Certifications
-- Master's degree in Software Engineering.
-
-## Interests
-- **Sports**: Canicross, Triathlon, Xterra (French & World championships participant).
-- **Community**: President of Cani'Compet Alsace.
+## Sport
+Canicross, bikejoring, triathlon and Xterra — French, European and World championships. President of the Cani'Compet Alsace club, organiser of the Benfeld Canicross.
 
 ## Contact
-- Website: [jonathanatton.com](https://jonathanatton.com)
-- LinkedIn: [linkedin.com/in/jonathan-atton-4286495b/](https://www.linkedin.com/in/jonathan-atton-4286495b/)
-- GitHub: [github.com/Watchwolf](https://github.com/Watchwolf)
+- Website: https://jonathanatton.com
+- CV (PDF): https://jonathanatton.com/Jonathan-Atton-CV.pdf
+- LinkedIn: https://www.linkedin.com/in/jonathan-atton-4286495b/
+- GitHub: https://github.com/Watchwolf
 - Email: jonathan.atton@gmail.com
