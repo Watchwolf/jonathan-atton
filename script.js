@@ -69,7 +69,7 @@ function initCameras() {
             alt: 'Jonathan Atton en tenue de bureau',
             label: 'Bureau',
             pos: '50% 22%',
-            sub: 'En poste chez TVH Consulting · Dynamics 365 · React'
+            sub: 'En poste chez TVH Consulting · Dynamics 365 · PCF · IA'
         }
     };
     let main = 'terrain';

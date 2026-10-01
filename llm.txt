@@ -33,8 +33,8 @@ Senior software developer based in Alsace – Moselle (France), with multi-secto
 Canicross, bikejoring, triathlon and Xterra — French, European and World championships. President of the Cani'Compet Alsace club, organiser of the Benfeld Canicross.
 
 ## Contact
-- Website: https://jonathanatton.com
-- CV (PDF): https://jonathanatton.com/Jonathan-Atton-CV.pdf
+- Website: https://jonathan-atton.com
+- CV (PDF): https://jonathan-atton.com/Jonathan-Atton-CV.pdf
 - LinkedIn: https://www.linkedin.com/in/jonathan-atton-4286495b/
 - GitHub: https://github.com/Watchwolf
 - Email: jonathan.atton@gmail.com
