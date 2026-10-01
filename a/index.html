@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Jonathan Atton — Développeur fullstack sénior & sportif d'endurance</title>
+    <meta name="description" content="Développeur fullstack sénior (15+ ans) : Python/Django, Angular/Ionic, React, .NET, Microsoft Dynamics 365. Applications, automatisation de processus et intégration de l'IA. Fondateur de Canicompet (20 000+ utilisateurs), sportif d'endurance.">
+    <meta name="author" content="Jonathan Atton">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#f2eee5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111214" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jonathan Atton — Développeur fullstack sénior">
+    <meta property="og:description" content="Des logiciels qui tiennent la distance. Fullstack Python/Django, Angular, React, Dynamics 365 — IA & automatisation de processus. Fondateur de Canicompet.">
+    <meta property="og:url" content="https://jonathanatton.com/">
+    <meta property="og:image" content="https://jonathanatton.com/images/jonathan_atton_profile.jpg">
+    <meta property="og:site_name" content="Jonathan Atton">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonathan Atton — Développeur fullstack sénior">
+    <meta name="twitter:description" content="Des logiciels qui tiennent la distance. Fullstack, IA & automatisation, sportif d'endurance.">
+    <meta name="twitter:image" content="https://jonathanatton.com/images/jonathan_atton_profile.jpg">
+
+    <link rel="canonical" href="https://jonathanatton.com/">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+
+    <!-- Theme + JS flag before first paint (avoids flashes) -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (t !== 'light' && t !== 'dark') {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            d.setAttribute('data-theme', t);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,600..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Martian+Mono:wght@400..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jonathan Atton",
+      "jobTitle": "Développeur fullstack sénior",
+      "url": "https://jonathanatton.com/",
+      "image": "https://jonathanatton.com/images/jonathan_atton_profile.jpg",
+      "email": "mailto:jonathan.atton@gmail.com",
+      "telephone": "+33620017101",
+      "address": { "@type": "PostalAddress", "addressRegion": "Alsace - Moselle", "addressCountry": "FR" },
+      "sameAs": [
+        "https://www.linkedin.com/in/jonathan-atton-4286495b/",
+        "https://github.com/Watchwolf"
+      ],
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Université de Nancy — Master 2 Ingénierie du logiciel" },
+      "worksFor": { "@type": "Organization", "name": "TVH Consulting" },
+      "knowsAbout": [
+        "Python", "Django", "Angular", "Ionic", "React", "C#", ".NET", "SQL",
+        "Microsoft Dynamics 365", "Power Apps", "WebSocket",
+        "Intelligence artificielle", "Automatisation de processus", "Intégration de LLM",
+        "RGPD", "Gestion de projet Agile", "Canicross", "Triathlon"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="brand" aria-label="Jonathan Atton — accueil">
+                <span class="brand-mark">JA</span>
+                <span class="brand-name">Jonathan Atton</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="#profil" data-nav="profil"><span class="nav-num">01</span><span data-i18n="nav.profil">Profil</span></a></li>
+                    <li><a href="#expertise" data-nav="expertise"><span class="nav-num">02</span><span data-i18n="nav.expertise">Expertise</span></a></li>
+                    <li><a href="#parcours" data-nav="parcours"><span class="nav-num">03</span><span data-i18n="nav.parcours">Parcours</span></a></li>
+                    <li><a href="#projets" data-nav="projets"><span class="nav-num">04</span><span data-i18n="nav.projets">Projets</span></a></li>
+                    <li><a href="#sport" data-nav="sport"><span class="nav-num">05</span><span data-i18n="nav.sport">Sport</span></a></li>
+                    <li><a href="#contact" data-nav="contact"><span class="nav-num">06</span><span data-i18n="nav.contact">Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="header-tools">
+                <button type="button" class="tool-btn lang-btn" aria-label="Switch to English">EN</button>
+                <button type="button" class="tool-btn theme-btn" aria-label="Changer de thème">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+                <a class="tool-btn cv-btn" href="../Jonathan-Atton-CV.pdf" download>
+                    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i><span data-i18n="header.cv">CV</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section id="top" class="hero">
+            <svg class="hero-track" viewBox="0 0 800 520" aria-hidden="true" focusable="false">
+                <g fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="1" y="1" width="798" height="518" rx="259" />
+                    <rect x="31" y="31" width="738" height="458" rx="229" />
+                    <rect x="61" y="61" width="678" height="398" rx="199" />
+                    <rect x="91" y="91" width="618" height="338" rx="169" />
+                    <rect x="121" y="121" width="558" height="278" rx="139" />
+                    <rect x="151" y="151" width="498" height="218" rx="109" />
+                </g>
+                <line class="hero-track-finish" x1="400" y1="1" x2="400" y2="151" />
+                <path id="lane" d="M260,76 H540 A184,184 0 0 1 540,444 H260 A184,184 0 0 1 260,76 Z" fill="none" stroke="none" />
+                <circle class="hero-track-runner" r="6">
+                    <animateMotion dur="22s" repeatCount="indefinite" rotate="auto">
+                        <mpath href="#lane" />
+                    </animateMotion>
+                </circle>
+            </svg>
+
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="kicker hero-in" style="--d:0">
+                        <span class="dot" aria-hidden="true"></span>
+                        <span data-i18n="hero.kicker">Développeur fullstack sénior · Alsace — Moselle</span>
+                    </p>
+
+                    <h1 class="hero-name" aria-label="Jonathan Atton">
+                        <span class="line"><span class="hero-in" style="--d:1">Jonathan</span></span>
+                        <span class="line"><span class="hero-in" style="--d:2">Atton<span class="accent-dot">.</span></span></span>
+                    </h1>
+
+                    <p class="hero-tagline hero-in" style="--d:3" data-i18n="hero.tagline">Des logiciels qui <em>tiennent la distance</em>.</p>
+
+                    <p class="hero-lead hero-in" style="--d:4" data-i18n="hero.lead">Plus de 15 ans à concevoir des applications web, mobiles et métiers, de l'idée jusqu'à la production. J'y intègre aujourd'hui l'<strong>IA</strong> pour automatiser les processus et préparer vos outils aux usages de demain.</p>
+
+                    <div class="hero-actions hero-in" style="--d:5">
+                        <a class="btn btn-primary" href="../Jonathan-Atton-CV.pdf" download>
+                            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                            <span data-i18n="hero.cv">Télécharger mon CV</span>
+                        </a>
+                        <a class="btn btn-ghost" href="#contact">
+                            <span data-i18n="hero.contact">Me contacter</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <ul class="hero-social hero-in" style="--d:6">
+                        <li><a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+                        <li><a href="https://github.com/Watchwolf" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+                        <li><a href="mailto:jonathan.atton@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>jonathan.atton@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Accreditation badge -->
+                <div class="hero-badge">
+                    <div class="lanyard">
+                        <div class="strap" aria-hidden="true"><span>JONATHAN ATTON · DEV × ENDURANCE · JONATHAN ATTON · DEV × ENDURANCE ·</span></div>
+                        <figure class="badge">
+                            <div class="badge-slot" aria-hidden="true"></div>
+                            <div class="badge-top">
+                                <span class="badge-mark">JA</span>
+                                <span class="mono">DEV × ENDURANCE</span>
+                            </div>
+                            <div class="badge-photo">
+                                <img src="../images/jonathan_atton_profile.jpg" alt="Portrait de Jonathan Atton" width="375" height="440">
+                            </div>
+                            <figcaption>
+                                <span class="badge-name">Jonathan Atton</span>
+                                <span class="badge-role" data-i18n="badge.role">Développeur fullstack sénior</span>
+                            </figcaption>
+                            <ul class="badge-zones" aria-label="Domaines">
+                                <li><b>Z1</b>BACK</li>
+                                <li><b>Z2</b>FRONT</li>
+                                <li><b>Z3</b><span data-i18n="badge.ai">IA</span></li>
+                                <li><b>Z4</b>TRAIL</li>
+                            </ul>
+                            <div class="badge-foot">
+                                <span class="barcode" aria-hidden="true"></span>
+                                <span class="mono">EST. 2010</span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <dl class="timing-board">
+                    <div class="tb-cell reveal">
+                        <dt data-i18n="stats.years">ans d'expérience</dt>
+                        <dd><span data-count="15">15</span><span class="plus">+</span></dd>
+                    </div>
+                    <div class="tb-cell reveal" style="--d:1">
+                        <dt data-i18n="stats.users">utilisateurs Canicompet</dt>
+                        <dd><span data-count="20000">20 000</span><span class="plus">+</span></dd>
+                    </div>
+                    <div class="tb-cell reveal" style="--d:2">
+                        <dt data-i18n="stats.products">produits conçus &amp; lancés</dt>
+                        <dd><span data-count="5">5</span></dd>
+                    </div>
+                    <div class="tb-cell reveal" style="--d:3">
+                        <dt data-i18n="stats.sectors">secteurs d'activité</dt>
+                        <dd><span data-count="6">6</span></dd>
+                    </div>
+                </dl>
+            </div>
+
+            <a href="#profil" class="scroll-cue" aria-label="Défiler vers le profil">
+                <span data-i18n="hero.scroll">Défiler</span>
+                <i aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <!-- ============ 01 PROFIL ============ -->
+        <section id="profil" class="section">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">01</span>
+                    <h2 class="sec-title" data-i18n="profil.title">Profil</h2>
+                    <span class="sec-meta" data-i18n="profil.meta">Dev · Entrepreneur · Athlète</span>
+                </header>
+
+                <div class="profil-grid">
+                    <div class="profil-text">
+                        <p class="statement reveal" data-i18n="profil.statement">Développeur, entrepreneur et sportif d'endurance : trois terrains, <em>une même exigence</em>.</p>
+                        <p class="reveal" data-i18n="profil.p1">En tant que <strong>développeur logiciel sénior</strong>, j'apporte une <strong>valeur ajoutée immédiate</strong> à votre entreprise. Mon <strong>expérience multisectorielle</strong> (banque, juridique, RGPD, ESN, laboratoire d'analyses, sport) me permet de comprendre rapidement vos enjeux métier et d'être <strong>force de proposition</strong> dès le premier jour. Mon expertise technique assure la création de solutions capables de répondre aux défis les plus complexes.</p>
+                        <p class="reveal" data-i18n="profil.p2">Au-delà du code, je m'appuie sur des compétences complémentaires en stratégie décisionnelle, marketing et encadrement d'équipes. Cette <strong>vision 360°</strong> me permet de proposer des solutions innovantes, cohérentes avec vos objectifs business.</p>
+                    </div>
+
+                    <ol class="lanes">
+                        <li class="lane reveal">
+                            <span class="lane-num">L1</span>
+                            <div>
+                                <h3 data-i18n="profil.l1.title">Développeur</h3>
+                                <p data-i18n="profil.l1.text">Fullstack Python/Django, Angular/Ionic, React, .NET et Microsoft Dynamics 365. Du back-end temps réel aux applications mobiles.</p>
+                            </div>
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        </li>
+                        <li class="lane reveal" style="--d:1">
+                            <span class="lane-num">L2</span>
+                            <div>
+                                <h3 data-i18n="profil.l2.title">Entrepreneur</h3>
+                                <p data-i18n="profil.l2.text">Fondateur de Canicompet et CaniGPS : du concept au produit utilisé par des milliers de personnes, marketing et support compris.</p>
+                            </div>
+                            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                        </li>
+                        <li class="lane reveal" style="--d:2">
+                            <span class="lane-num">L3</span>
+                            <div>
+                                <h3 data-i18n="profil.l3.title">Sportif d'endurance</h3>
+                                <p data-i18n="profil.l3.text">Canicross, triathlon, Xterra : championnats de France, d'Europe et du Monde. Président de club et organisateur de course.</p>
+                            </div>
+                            <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 02 EXPERTISE ============ -->
+        <section id="expertise" class="section section-alt">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">02</span>
+                    <h2 class="sec-title" data-i18n="expertise.title">Expertise</h2>
+                    <span class="sec-meta" data-i18n="expertise.meta">Stack · IA · Leadership</span>
+                </header>
+
+                <!-- IA block -->
+                <div class="ai-panel reveal">
+                    <div class="ai-intro">
+                        <p class="kicker"><span class="dot" aria-hidden="true"></span><span data-i18n="ai.kicker">IA &amp; automatisation</span></p>
+                        <h3 class="ai-title" data-i18n="ai.title">Prêt pour les besoins IA de demain.</h3>
+                        <p data-i18n="ai.text">L'intelligence artificielle transforme la façon de concevoir des logiciels et de faire tourner une entreprise. Je m'appuie au quotidien sur les outils d'IA pour <strong>créer des applications</strong>, <strong>automatiser des processus</strong> et livrer plus vite, avec la rigueur d'un développeur sénior.</p>
+                        <p class="ai-proof" data-i18n="ai.proof">Une expérience ancrée dans le concret : R&amp;D en vision par ordinateur chez Eurofins dès 2018, fonctionnalités d'IA intégrées à Son Espace Santé.</p>
+                    </div>
+                    <ol class="ai-list">
+                        <li>
+                            <span class="ai-idx">A</span>
+                            <div>
+                                <h4 data-i18n="ai.c1.title">Applications intelligentes</h4>
+                                <p data-i18n="ai.c1.text">Intégration de modèles de langage dans vos applications : assistants métier, analyse de documents, recherche et génération de contenu.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ai-idx">B</span>
+                            <div>
+                                <h4 data-i18n="ai.c2.title">Automatisation de processus</h4>
+                                <p data-i18n="ai.c2.text">Workflows et agents connectés à vos outils existants (Dynamics 365, API, bases de données) pour supprimer les tâches répétitives.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ai-idx">C</span>
+                            <div>
+                                <h4 data-i18n="ai.c3.title">Cadrage &amp; conformité</h4>
+                                <p data-i18n="ai.c3.text">Identifier où l'IA crée une vraie valeur, choisir les bonnes solutions et les déployer dans le respect du RGPD et de la sécurité des données.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills">
+                    <div class="skills-legend reveal">
+                        <span><i class="chip-key is-core" aria-hidden="true"></i><span data-i18n="skills.legend.core">Maîtrise avancée</span></span>
+                        <span><i class="chip-key" aria-hidden="true"></i><span data-i18n="skills.legend.good">Maîtrise opérationnelle</span></span>
+                    </div>
+
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/01</span><span data-i18n="skills.back">Back-end</span></h3>
+                        <ul class="chips">
+                            <li class="is-core">Python / Django</li>
+                            <li class="is-core">.NET / C#</li>
+                            <li class="is-core" data-i18n="skills.api">API REST</li>
+                            <li data-i18n="skills.ws">WebSocket (temps réel)</li>
+                            <li>WPF</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/02</span><span data-i18n="skills.front">Front-end &amp; mobile</span></h3>
+                        <ul class="chips">
+                            <li class="is-core">Angular</li>
+                            <li class="is-core">Ionic</li>
+                            <li>React</li>
+                            <li>Python / PyQt</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/03</span><span data-i18n="skills.ms">Microsoft &amp; CRM</span></h3>
+                        <ul class="chips">
+                            <li class="is-core">Dynamics 365</li>
+                            <li class="is-core">Power Apps · Canvas Apps</li>
+                            <li data-i18n="skills.pcf">Composants React pour Dynamics</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/04</span><span data-i18n="skills.data">Data &amp; cloud</span></h3>
+                        <ul class="chips">
+                            <li class="is-core">SQL Server · MySQL</li>
+                            <li>OVH</li>
+                            <li>DevOps</li>
+                            <li>Linux · macOS · Windows</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/05</span><span data-i18n="skills.ai">IA &amp; R&amp;D</span></h3>
+                        <ul class="chips">
+                            <li class="is-core" data-i18n="skills.llm">LLM &amp; assistants</li>
+                            <li class="is-core" data-i18n="skills.automation">Automatisation de processus</li>
+                            <li data-i18n="skills.vision">Vision par ordinateur (OpenCV / Emgu)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/06</span><span data-i18n="skills.lead">Leadership</span></h3>
+                        <ul class="chips">
+                            <li class="is-core" data-i18n="skills.autonomy">Autonomie &amp; décision</li>
+                            <li data-i18n="skills.team">Encadrement d'équipe</li>
+                            <li data-i18n="skills.agile">Gestion de projet Agile / Scrum</li>
+                            <li data-i18n="skills.tenders">Appels d'offres grands comptes</li>
+                            <li>RGPD</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3 class="skill-cat"><span>S/07</span><span data-i18n="skills.lang">Langues</span></h3>
+                        <ul class="chips">
+                            <li class="is-core" data-i18n="skills.fr">Français — natif</li>
+                            <li data-i18n="skills.en">Anglais — professionnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 03 PARCOURS ============ -->
+        <section id="parcours" class="section">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">03</span>
+                    <h2 class="sec-title" data-i18n="parcours.title">Parcours</h2>
+                    <span class="sec-meta">2009 → <span data-i18n="parcours.now">aujourd'hui</span></span>
+                </header>
+
+                <ol class="splits">
+                    <li class="split reveal">
+                        <div class="split-time"><span>10/2025</span><span data-i18n="parcours.today">Aujourd'hui</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.tvh.role">Développeur sénior</span> <span class="at">TVH Consulting</span></h3>
+                            <p data-i18n="parcours.tvh.text">Intégrateur et développeur spécialisé sur <strong>Microsoft Dynamics 365</strong>. Conception et déploiement d'applications métiers avancées avec <strong>Canvas Apps</strong> et <strong>React</strong> pour des clients comme TotalEnergies ou Guinot.</p>
+                            <ul class="chips chips-sm"><li>Dynamics 365</li><li>Canvas Apps</li><li>React</li></ul>
+                        </div>
+                        <div class="split-status"><span class="live" data-i18n="parcours.live">En cours</span></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>01/2025</span><span data-i18n="parcours.today">Aujourd'hui</span></div>
+                        <div class="split-body">
+                            <h3>Son Espace Santé <span class="at" data-i18n="parcours.side">Side project</span></h3>
+                            <p data-i18n="parcours.ses.text">Application mobile de passeport numérique pour animaux de compagnie : suivi administratif, santé et bien-être, avec des fonctionnalités d'<strong>IA</strong> intégrées.</p>
+                            <ul class="chips chips-sm"><li>Ionic</li><li>Angular</li><li>Django</li><li>Python</li><li data-i18n="parcours.tag.ai">IA</li></ul>
+                            <p class="split-links">
+                                <a href="https://sonespacesante.com" target="_blank" rel="noopener noreferrer">sonespacesante.com ↗</a>
+                                <a href="https://apps.sonespacesante.com/login?demo=1" target="_blank" rel="noopener noreferrer" data-i18n="parcours.demo">Essayer la démo ↗</a>
+                            </p>
+                        </div>
+                        <div class="split-status"><span class="live" data-i18n="parcours.live">En cours</span></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>12/2016</span><span data-i18n="parcours.today">Aujourd'hui</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.cc.role">Fondateur</span> <span class="at">Canicompet</span></h3>
+                            <p data-i18n="parcours.cc.text">Création et promotion d'une plateforme mobile permettant aux clubs sportifs de gérer les inscriptions et de chronométrer leurs compétitions (manuel ou automatique) en autonomie. <strong>+20 000 utilisateurs</strong>.</p>
+                            <ul class="chips chips-sm"><li>Ionic</li><li>Angular</li><li>Django</li><li>DevOps</li><li>OVH</li></ul>
+                        </div>
+                        <div class="split-status"><span class="live" data-i18n="parcours.live">En cours</span></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>06/2020</span><span>02/2025</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.gps.role">Fondateur</span> <span class="at">CaniGPS</span></h3>
+                            <p data-i18n="parcours.gps.text">Solution de suivi GPS pour chiens : localisation en temps réel, clôtures virtuelles, alertes et suivi d'activité sportive.</p>
+                            <ul class="chips chips-sm"><li>Ionic</li><li>Angular</li><li>Django</li><li>WebSocket</li><li>Hardware GPS</li></ul>
+                        </div>
+                        <div class="split-status"></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>04/2018</span><span>12/2022</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.eurofins.role">Développeur sénior</span> <span class="at">Eurofins</span></h3>
+                            <p data-i18n="parcours.eurofins.text">Leader mondial de l'analyse en laboratoire. D'abord dans l'équipe du logiciel de suivi des analyses, puis <strong>développeur principal</strong> d'un projet R&amp;D phare : l'analyse automatique par microscope électronique (vision par ordinateur, IA).</p>
+                            <ul class="chips chips-sm"><li>C#</li><li>.NET</li><li>SQL Server</li><li>OpenCV</li><li data-i18n="parcours.tag.ai">IA</li></ul>
+                        </div>
+                        <div class="split-status"></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>01/2013</span><span>03/2018</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.actecil.role">Responsable informatique</span> <span class="at">ActeCil</span></h3>
+                            <p data-i18n="parcours.actecil.text">Société spécialisée dans les audits et logiciels RGPD. Mise en place de l'environnement informatique, création d'outils SaaS (APM, CilApps) et <strong>constitution d'une équipe</strong>. Appels d'offres avec des grands comptes (Thales, groupe La Poste).</p>
+                            <ul class="chips chips-sm"><li>Django</li><li>RGPD</li><li data-i18n="parcours.tag.mgmt">Management</li><li>DevOps</li></ul>
+                        </div>
+                        <div class="split-status"></div>
+                    </li>
+                    <li class="split reveal">
+                        <div class="split-time"><span>01/2010</span><span>01/2013</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.ei.role">Développeur</span> <span class="at">Euro Information</span></h3>
+                            <p data-i18n="parcours.ei.text">Outils web, statistiques, CMS multi-sites et applications bancaires pour le Crédit Mutuel CIC.</p>
+                            <ul class="chips chips-sm"><li>C#</li><li>ASP.NET</li><li>Data</li></ul>
+                        </div>
+                        <div class="split-status"></div>
+                    </li>
+                    <li class="split split-start reveal">
+                        <div class="split-time"><span>2009</span><span data-i18n="parcours.start">Départ</span></div>
+                        <div class="split-body">
+                            <h3><span data-i18n="parcours.edu.role">Master 2 Ingénierie du logiciel</span> <span class="at">Nancy</span></h3>
+                            <p data-i18n="parcours.edu.text">Pendant mes études : contributeur au projet libre mondial Enlightenment (EFL) et participant au Google Summer of Code.</p>
+                            <ul class="chips chips-sm"><li>C</li><li>C++</li><li>Open source</li></ul>
+                        </div>
+                        <div class="split-status"><span class="flag" aria-hidden="true"></span></div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ 04 PROJETS ============ -->
+        <section id="projets" class="section section-alt">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">04</span>
+                    <h2 class="sec-title" data-i18n="projets.title">Projets</h2>
+                    <span class="sec-meta" data-i18n="projets.meta">Conçus, codés, lancés</span>
+                </header>
+
+                <div class="projects">
+                    <article class="project project-xl reveal">
+                        <a class="project-media" href="https://canicompet.com" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="../images/racesconnect-1-1024x1024.png" alt="" loading="lazy" style="object-position:50% 22%">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top"><span>P/01</span><span data-i18n="projets.cc.meta">Fondateur · depuis 2016</span></div>
+                            <h3>Canicompet</h3>
+                            <p data-i18n="projets.cc.text">Plateforme d'inscriptions et de chronométrage de compétitions sportives, utilisée par les clubs en totale autonomie.</p>
+                            <p class="metric"><strong><span data-count="20000">20 000</span>+</strong> <span data-i18n="projets.cc.metric">utilisateurs actifs</span></p>
+                            <a class="link-arrow" href="https://canicompet.com" target="_blank" rel="noopener noreferrer">canicompet.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" style="--d:1">
+                        <a class="project-media" href="https://sonespacesante.com" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="../images/son-espace-sante.png" alt="" loading="lazy" style="object-position:50% 40%">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top"><span>P/02</span><span data-i18n="projets.ses.meta">Side project · 2025</span></div>
+                            <h3>Son Espace Santé</h3>
+                            <p data-i18n="projets.ses.text">Passeport numérique et suivi bien-être des animaux de compagnie, avec des fonctionnalités d'IA.</p>
+                            <a class="link-arrow" href="https://apps.sonespacesante.com/login?demo=1" target="_blank" rel="noopener noreferrer"><span data-i18n="projets.ses.link">Essayer la démo</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project project-wide reveal">
+                        <a class="project-media" href="https://racesconnect.com/racesconnect" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="../images/banner-1024x269.png" alt="" loading="lazy" style="object-position:8% 50%">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top"><span>P/03</span><span data-i18n="projets.rc.meta">Logiciel de bureau</span></div>
+                            <h3>RacesConnect Timing</h3>
+                            <p data-i18n="projets.rc.text">Listes de départ et chronométrage des compétitions, manuel ou automatique avec puces.</p>
+                            <a class="link-arrow" href="https://racesconnect.com/racesconnect" target="_blank" rel="noopener noreferrer">racesconnect.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project project-wide reveal" style="--d:1">
+                        <a class="project-media" href="https://canigps.fr" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="../images/canigps_apps-1024x299.png" alt="" loading="lazy" style="object-position:88% 50%">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top"><span>P/04</span><span data-i18n="projets.gps.meta">Fondateur · 2020 – 2025</span></div>
+                            <h3>CaniGPS</h3>
+                            <p data-i18n="projets.gps.text">Géolocalisation temps réel, clôtures virtuelles et suivi d'activité pour chiens.</p>
+                            <a class="link-arrow" href="https://canigps.fr" target="_blank" rel="noopener noreferrer">canigps.fr <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-media">
+                            <img src="../images/caniclub-connect.jpg" alt="" loading="lazy" style="object-position:50% 70%">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span>P/05</span><span data-i18n="projets.club.meta">Application mobile</span></div>
+                            <h3>CaniClub Connect</h3>
+                            <p data-i18n="projets.club.text">Application pour clubs canins : membres, communication, calendrier et boutique.</p>
+                        </div>
+                    </article>
+
+                    <a class="project project-cta reveal" style="--d:1" href="#contact">
+                        <span class="project-top"><span>P/06</span><span data-i18n="projets.next.meta">Prochain départ</span></span>
+                        <span class="cta-title" data-i18n="projets.next.title">Votre projet ?</span>
+                        <span class="cta-text" data-i18n="projets.next.text">Application métier, automatisation IA, intégration Dynamics 365… Parlons-en.</span>
+                        <span class="cta-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 05 SPORT ============ -->
+        <section id="sport" class="section sport">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">05</span>
+                    <h2 class="sec-title" data-i18n="sport.title">Sport</h2>
+                    <span class="sec-meta" data-i18n="sport.meta">Canicross · Triathlon · Xterra</span>
+                </header>
+
+                <div class="sport-grid">
+                    <div class="sport-copy">
+                        <p class="statement reveal" data-i18n="sport.statement">L'endurance, sur les sentiers <em>comme en production</em>.</p>
+                        <p class="reveal" data-i18n="sport.p1">Athlète passionné, je pratique le canicross, le caniVTT, le triathlon et le Xterra, et j'ai participé à plusieurs <strong>championnats de France, d'Europe et du Monde</strong>.</p>
+                        <p class="reveal" data-i18n="sport.p2">Le sport m'apporte résilience, régularité et le goût des objectifs ambitieux : les mêmes qualités que j'applique à chaque projet.</p>
+
+                        <dl class="results reveal">
+                            <div><dt data-i18n="sport.r1.k">Disciplines</dt><dd data-i18n="sport.r1.v">Canicross · CaniVTT · Triathlon · Xterra</dd></div>
+                            <div><dt data-i18n="sport.r2.k">Niveau</dt><dd data-i18n="sport.r2.v">Championnats de France, d'Europe et du Monde</dd></div>
+                            <div><dt data-i18n="sport.r3.k">Club</dt><dd data-i18n="sport.r3.v">Président de Cani'Compet Alsace</dd></div>
+                            <div><dt data-i18n="sport.r4.k">Organisation</dt><dd><a href="https://canicrossdebenfeld.canicompet.com/" target="_blank" rel="noopener noreferrer" data-i18n="sport.r4.v">Canicross de Benfeld ↗</a></dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="sport-photos">
+                        <figure class="photo photo-main reveal">
+                            <img src="../images/FCAB2D79-2C3F-43FF-BF05-7690E92FD2E2_1_105_c-1024x683.jpeg" alt="Jonathan Atton en compétition de canicross avec son chien" loading="lazy" width="700" height="467">
+                            <figcaption>Canicross</figcaption>
+                        </figure>
+                        <figure class="photo reveal" style="--d:1">
+                            <img src="../images/E3CB5563-38F4-49E4-92AA-5CBF122BCEBA_1_105_c-1024x683.jpeg" alt="Jonathan Atton lors de la transition natation-vélo d'un triathlon" loading="lazy" width="700" height="467">
+                            <figcaption>Triathlon</figcaption>
+                        </figure>
+                        <figure class="photo reveal" style="--d:2">
+                            <img src="../images/DFAD2798-CE25-41A5-9EF6-79DEAA083C6F_1_105_c-1-1024x684.jpeg" alt="Jonathan Atton franchissant la ligne d'arrivée d'une course Xterra" loading="lazy" width="700" height="467">
+                            <figcaption>Xterra</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 06 CONTACT ============ -->
+        <section id="contact" class="section">
+            <div class="wrap">
+                <header class="sec-head reveal">
+                    <span class="sec-num">06</span>
+                    <h2 class="sec-title" data-i18n="contact.title">Contact</h2>
+                    <span class="sec-meta" data-i18n="contact.meta">Réponse sous 48 h</span>
+                </header>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p class="statement" data-i18n="contact.statement">Un projet, une mission, <em>une idée à automatiser</em> ?</p>
+                        <p data-i18n="contact.text">Collaboration, question technique ou opportunité : écrivez-moi, je serai ravi d'en discuter.</p>
+
+                        <ul class="contact-list">
+                            <li><span class="mono" data-i18n="contact.email">Email</span><a href="mailto:jonathan.atton@gmail.com">jonathan.atton@gmail.com</a></li>
+                            <li><span class="mono" data-i18n="contact.phone">Téléphone</span><a href="tel:+33620017101">+33 6 20 01 71 01</a></li>
+                            <li><span class="mono" data-i18n="contact.location">Secteur</span><span data-i18n="contact.location.v">Alsace — Moselle, France</span></li>
+                            <li><span class="mono" data-i18n="contact.web">En ligne</span><span class="inline-links"><a href="https://www.linkedin.com/in/jonathan-atton-4286495b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Watchwolf" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span></li>
+                        </ul>
+
+                        <a class="btn btn-ghost" href="../Jonathan-Atton-CV.pdf" download>
+                            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                            <span data-i18n="contact.cv">Télécharger le CV (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="form-card reveal" style="--d:1">
+                        <form id="contactForm" novalidate>
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="firstName" data-i18n="form.first">Prénom</label>
+                                    <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+                                </div>
+                                <div class="field">
+                                    <label for="lastName" data-i18n="form.last">Nom</label>
+                                    <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="email" data-i18n="form.email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="subject" data-i18n="form.subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="field">
+                                <label for="message" data-i18n="form.message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <p id="formError" class="form-error" role="alert" hidden></p>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span class="btn-label" data-i18n="form.send">Envoyer le message</span>
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </form>
+
+                        <div id="formSuccess" class="form-success" hidden>
+                            <span class="success-flag" aria-hidden="true"><i class="fa-solid fa-flag-checkered"></i></span>
+                            <h3 data-i18n="form.ok.title">Message bien arrivé !</h3>
+                            <p data-i18n="form.ok.text">Merci pour votre message. Je vous réponds dans les plus brefs délais.</p>
+                            <button type="button" class="btn btn-ghost" id="formReset" data-i18n="form.ok.again">Envoyer un autre message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p class="footer-big" aria-hidden="true">Jonathan Atton<span class="accent-dot">.</span></p>
+            <div class="footer-row">
+                <p>© 2026 Jonathan Atton · <span data-i18n="footer.tag">Développeur fullstack sénior &amp; sportif d'endurance</span></p>
+                <a href="#top" class="back-top"><span data-i18n="footer.top">Retour au départ</span> <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ MOBILE BOTTOM NAV ============ -->
+    <nav class="bottom-nav" aria-label="Navigation mobile">
+        <a href="#profil" data-nav="profil"><i class="fa-solid fa-user" aria-hidden="true"></i><span data-i18n="nav.profil">Profil</span></a>
+        <a href="#expertise" data-nav="expertise"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span data-i18n="nav.expertise">Expertise</span></a>
+        <a href="#parcours" data-nav="parcours"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span data-i18n="nav.parcours">Parcours</span></a>
+        <a href="#projets" data-nav="projets"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span data-i18n="nav.projets">Projets</span></a>
+        <a href="#sport" data-nav="sport"><i class="fa-solid fa-person-running" aria-hidden="true"></i><span data-i18n="nav.sport">Sport</span></a>
+        <a href="#contact" data-nav="contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
