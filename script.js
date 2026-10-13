@@ -1,6 +1,6 @@
-/* Proposition C — « En direct »
-   Live clock, career chrono, camera switch, ticker, counters,
-   scroll reveals and the contact form. */
+/* Version F — « Air »
+   Theme toggle (light by default, key 'theme-f'), compact mobile menu,
+   scroll reveals, scroll-spy, counters and the contact form. */
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -9,112 +9,42 @@ const store = {
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
 };
 
-const pad = (n) => String(n).padStart(2, '0');
-
-/* ---------- Clock + career chrono ---------- */
-const CAREER_START = new Date(2010, 0, 4, 9, 0, 0); // first day at Euro Information
-
-function careerElapsed(now) {
-    const s = CAREER_START;
-    let y = now.getFullYear() - s.getFullYear();
-    let m = now.getMonth() - s.getMonth();
-    let d = now.getDate() - s.getDate();
-    let rest = (now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds())
-        - (s.getHours() * 3600 + s.getMinutes() * 60 + s.getSeconds());
-    if (rest < 0) { rest += 86400; d--; }
-    if (d < 0) {
-        m--;
-        d += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
-    }
-    if (m < 0) { y--; m += 12; }
-    return { y, m, d, h: Math.floor(rest / 3600), mi: Math.floor((rest % 3600) / 60), se: rest % 60 };
-}
-
-function initClock() {
-    const clock = document.querySelector('[data-clock]');
-    const chrono = document.querySelector('[data-chrono]');
-    const hms = document.querySelector('[data-chrono-hms]');
-    const tick = () => {
-        const now = new Date();
-        if (clock) clock.textContent = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-        const e = careerElapsed(now);
-        if (chrono) chrono.textContent = `${e.y} a · ${pad(e.m)} m · ${pad(e.d)} j`;
-        if (hms) hms.textContent = `+ ${pad(e.h)}:${pad(e.mi)}:${pad(e.se)}`;
+/* ---------- Theme ---------- */
+function initTheme() {
+    const btn = document.querySelector('.theme-btn');
+    if (!btn) return;
+    const root = document.documentElement;
+    const sync = () => {
+        const dark = root.getAttribute('data-theme') === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Activer le thème clair' : 'Activer le thème sombre');
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0f131c' : '#f6f8fb');
     };
-    tick();
-    setInterval(tick, 1000);
-}
-
-/* ---------- Camera switch (main feed ⇄ picture-in-picture) ---------- */
-function initCameras() {
-    const screen = document.querySelector('.screen');
-    const pip = document.querySelector('[data-pip]');
-    if (!screen || !pip) return;
-    const feedImg = screen.querySelector('[data-feed-img]');
-    const pipImg = pip.querySelector('[data-pip-img]');
-    const pipLabel = pip.querySelector('[data-pip-label]');
-    const camNow = screen.querySelector('[data-cam-now]');
-    const sub = screen.querySelector('.lt-sub');
-
-    const cams = {
-        terrain: {
-            src: 'images/canicross-hd.jpg',
-            alt: 'Jonathan Atton en course de canicross avec son chien',
-            label: 'Terrain',
-            pos: '56% 45%',
-            sub: 'Alsace — Moselle · Fondateur de Canicompet'
-        },
-        bureau: {
-            src: 'images/jonathan-atton-portrait-hd.jpg',
-            alt: 'Jonathan Atton en tenue de bureau',
-            label: 'Bureau',
-            pos: '50% 22%',
-            sub: 'En poste chez TVH Consulting · Dynamics 365 · PCF · IA'
-        }
-    };
-    let main = 'terrain';
-    let busy = false;
-
-    const apply = () => {
-        const other = main === 'terrain' ? 'bureau' : 'terrain';
-        feedImg.src = cams[main].src;
-        feedImg.alt = cams[main].alt;
-        feedImg.style.objectPosition = cams[main].pos;
-        pipImg.src = cams[other].src;
-        pip.classList.toggle('is-landscape', other === 'terrain');
-        pipLabel.textContent = `CAM 2 · ${cams[other].label}`;
-        camNow.textContent = `CAM 1 · ${cams[main].label}`;
-        pip.setAttribute('aria-label', `Passer sur la caméra 2 : ${cams[other].label.toLowerCase()}`);
-        const flag = sub.querySelector('.flag-fr');
-        sub.textContent = cams[main].sub;
-        sub.prepend(flag);
-    };
-
-    pip.addEventListener('click', () => {
-        if (busy) return;
-        busy = true;
-        main = main === 'terrain' ? 'bureau' : 'terrain';
-        if (reducedMotion) {
-            apply();
-            busy = false;
-            return;
-        }
-        screen.classList.remove('is-wiping');
-        void screen.offsetWidth;
-        screen.classList.add('is-wiping');
-        setTimeout(apply, 240);
-        setTimeout(() => { screen.classList.remove('is-wiping'); busy = false; }, 720);
+    sync();
+    btn.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        store.set('theme-f', next);
+        sync();
     });
 }
 
-/* ---------- Ticker: duplicate items for a seamless loop ---------- */
-function initTicker() {
-    const track = document.querySelector('[data-ticker]');
-    if (!track) return;
-    Array.from(track.children).forEach((item) => {
-        const clone = item.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        track.appendChild(clone);
+/* ---------- Mobile menu ---------- */
+function initMenu() {
+    const btn = document.querySelector('.menu-btn');
+    const links = document.getElementById('navLinks');
+    if (!btn || !links) return;
+    const setOpen = (open) => {
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+        links.classList.toggle('is-open', open);
+    };
+    btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
+    links.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && links.classList.contains('is-open')) { setOpen(false); btn.focus(); }
+    });
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-pill')) setOpen(false);
     });
 }
 
@@ -141,12 +71,12 @@ function initCounters() {
     document.querySelectorAll('[data-count]').forEach((el) => io.observe(el));
 }
 
-/* ---------- Contact form ---------- */
+/* ---------- Contact form (same logic as the live site) ---------- */
 function initForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
-    const studio = form.closest('.studio');
-    const ok = studio.querySelector('.form-ok');
+    const card = form.closest('.form-card');
+    const ok = card.querySelector('.form-ok');
     const errorBox = form.querySelector('.form-error');
     const submit = form.querySelector('button[type="submit"]');
     const label = submit.querySelector('.btn-label');
@@ -197,7 +127,7 @@ function initForm() {
             form.reset();
             form.hidden = true;
             ok.hidden = false;
-            studio.classList.add('is-sent');
+            card.classList.add('is-sent');
         } catch (err) {
             console.error('Contact form error:', err);
             showError('Une erreur est survenue. Réessayez ou écrivez-moi directement à jonathan.atton@gmail.com.');
@@ -208,25 +138,21 @@ function initForm() {
         }
     });
 
-    studio.querySelector('[data-form-again]')?.addEventListener('click', () => {
+    card.querySelector('[data-form-again]')?.addEventListener('click', () => {
         ok.hidden = true;
         form.hidden = false;
-        studio.classList.remove('is-sent');
+        card.classList.remove('is-sent');
         form.firstName.focus();
     });
 }
 
 /* ---------- Page chrome ---------- */
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.theme-btn')?.addEventListener('click', () => {
-        const root = document.documentElement;
-        const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-        root.setAttribute('data-theme', next);
-        store.set('theme', next);
-    });
+    initTheme();
+    initMenu();
 
     const reveals = document.querySelectorAll('.reveal');
-    if (reducedMotion) {
+    if (reducedMotion || !('IntersectionObserver' in window)) {
         reveals.forEach((el) => el.classList.add('is-in'));
     } else {
         const io = new IntersectionObserver((entries) => {
@@ -236,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     io.unobserve(en.target);
                 }
             });
-        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
         reveals.forEach((el) => io.observe(el));
     }
 
@@ -245,17 +171,20 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((en) => {
             if (!en.isIntersecting) return;
             const id = en.target.id === 'top' ? null : en.target.id;
-            links.forEach((a) => a.classList.toggle('is-active', a.dataset.nav === id));
+            links.forEach((a) => {
+                const on = a.dataset.nav === id;
+                a.classList.toggle('is-active', on);
+                if (on) a.setAttribute('aria-current', 'true');
+                else a.removeAttribute('aria-current');
+            });
         });
     }, { rootMargin: '-45% 0px -50% 0px' });
     document.querySelectorAll('main section[id]').forEach((s) => spy.observe(s));
 
-    initClock();
-    initCameras();
-    initTicker();
+    const onScroll = () => document.body.classList.toggle('is-scrolled', window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
     initCounters();
     initForm();
-
-    console.log('%c● EN DIRECT%c  Jonathan Atton — développeur fullstack sénior & sportif d\'endurance\n→ jonathan.atton@gmail.com',
-        'background:#ff2e44;color:#fff;font:800 12px sans-serif;padding:3px 8px', 'font:12px ui-monospace,monospace');
 });
