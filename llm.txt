@@ -16,14 +16,14 @@ Senior software developer based in Alsace – Moselle (France), with multi-secto
 - **Front-end & mobile**: Angular, Ionic, React, PyQt.
 - **Microsoft & CRM**: Dynamics 365, Power Apps / Canvas Apps, React components for Dynamics.
 - **Data & cloud**: SQL Server, MySQL, OVH, DevOps, Linux / macOS / Windows.
-- **Leadership**: team management, Agile / Scrum, key-account tenders, GDPR.
+- **Leadership**: project & technical organisation, team building and management, direct client relationship, autonomy & decision-making, key-account tenders, GDPR.
 - **Languages**: French (native), English (professional).
 
 ## Experience
 - **TVH Consulting** (10/2025 – present): Senior developer — Microsoft Dynamics 365, Canvas Apps, React (clients such as TotalEnergies, Guinot).
-- **Son Espace Santé** (01/2025 – present, side project): digital pet passport app with AI features. https://sonespacesante.com
-- **Canicompet** (12/2016 – present, founder): registration and race-timing platform, 20,000+ users. https://canicompet.com
-- **CaniGPS** (06/2020 – 02/2025, founder): GPS tracking for dogs. https://canigps.fr
+- **Son Espace Santé** (01/2025 – present, side project, designer-developer): digital pet passport app with AI features. https://sonespacesante.com
+- **Canicompet** (12/2016 – present, side project, founder): registration platform for canicross races, French market leader with 20,000+ users, completed by the Canichrono timing software. https://www.canicompet.com
+- **CaniGPS** (06/2020 – 02/2025, creator & technical lead): GPS tracking for dogs. https://canigps.fr
 - **Eurofins** (04/2018 – 12/2022): Senior developer, lead developer of an R&D project on automated electron-microscope analysis (computer vision, AI).
 - **ActeCil** (01/2013 – 03/2018): IT manager — GDPR SaaS tools, infrastructure, team building, key-account tenders (Thales, La Poste).
 - **Euro Information / Crédit Mutuel CIC** (01/2010 – 01/2013): Developer — web tools, statistics, multi-site CMS, banking apps.
